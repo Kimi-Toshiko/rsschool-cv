@@ -160,6 +160,7 @@ header .header-wrapper .hamburger {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 }
 header .header-wrapper .hamburger .line {
   width: 100%;

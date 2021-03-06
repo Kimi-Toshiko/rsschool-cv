@@ -45,6 +45,68 @@ body {
   padding: 0;
 }
 
+aside {
+  width: 80%;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #E2E2E2;
+}
+aside .profile {
+  padding: 1rem;
+}
+aside .profile img {
+  width: 50%;
+  height: auto;
+  margin: 0 25% 1rem 25%;
+  border-radius: 50%;
+}
+aside .profile .info {
+  text-align: center;
+  text-transform: uppercase;
+}
+aside .profile .info h1 {
+  font-family: "Brandon Grotesque", sans-serif;
+  font-weight: 900;
+  font-size: 1.12rem;
+  margin-bottom: 0.5rem;
+}
+aside .profile .info h2 {
+  font-size: 0.67rem;
+  color: #4D748B;
+}
+aside .menu-wrapper {
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.84rem;
+}
+aside .menu-wrapper ul li {
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+aside .menu-wrapper ul li a {
+  color: #000;
+  text-decoration: none;
+}
+aside .menu-wrapper ul li .active {
+  color: #4D748B;
+  border-bottom: 2px solid #4D748B;
+}
+aside .footer {
+  text-align: center;
+  color: #4D748B;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+aside .footer p a {
+  color: #4D748B;
+  transition: all 0.25s linear;
+}
+aside .footer p a:hover {
+  color: #000;
+}
+
 header {
   width: 100%;
   background-color: #fff;

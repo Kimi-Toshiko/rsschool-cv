@@ -1,0 +1,165 @@
+@import "vars";
+
+
+//BACKGROUND-COLORS FOR DEV USE ONLY
+
+// aside {
+//     background-color: aqua;
+//     .profile {
+//         background-color: aquamarine;
+//         img {
+//             background-color: bisque;
+//         }
+//         .info {
+//             background-color: beige;
+//             h1 {
+//                 background-color: brown;
+//             }
+//             h2 {
+//                 background-color: cadetblue;
+//             }
+//         }
+//     }
+//     .menu-wrapper {
+//          background-color: chartreuse;
+//          ul {
+//              background-color: chocolate;
+//              li {
+//                  background-color: cornflowerblue;
+//              }
+//              a {
+//                  background-color: cornsilk;
+//              }
+//          }
+//     }
+//     .footer {
+//         background-color: crimson;
+//         p {
+//             background-color: cyan;
+//             a {
+//                 background-color: darkcyan;
+//             }
+//         }
+//     }
+// }
+
+// header {
+//     background-color: lightblue;
+//     .contact-logos {
+//         background-color: lightsalmon;
+//         .social-network {
+//             background-color: lightgreen;
+//         }
+//     }
+//     .header-wrapper {
+//         background-color: lightseagreen;
+//         .contact-text {
+//             background-color: lightskyblue;
+//             .arrow {
+//                 background-color: lightslategray;
+//             }
+//             .text {
+//                 background-color: lightyellow;
+//             }
+//         }
+//         .hamburger {
+//             background-color: lime;
+//         }
+//     }
+// }
+
+
+
+
+
+
+
+html {
+    font-size: 18px;
+    font-family: $gill-font;
+    color: $black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: $white;
+
+    .contact-logos {
+        background-color: $white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: .3rem 0;
+        display: none;
+
+        .social-network {
+            margin: 0 .5rem;
+            color: $black;
+            transition: all .25s ease-in;
+
+            &:first-child {
+                &:hover {
+                    color: #2088FF;
+                }
+            }
+            &:nth-child(2) {
+                &:hover {
+                    color: #6F85D5;
+                }
+            }
+            &:nth-child(3) {
+                &:hover {
+                    color: #2EA2D4;
+                }
+            }
+            &:nth-child(4) {
+                &:hover {
+                    color: #42E35F;
+                }
+            }
+            &:last-child {
+                &:hover {
+                    color: #00AAE9;
+                }
+            }
+        }
+    }
+
+    .header-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: .6rem .5rem;
+
+        .contact-text {
+            display: flex;
+            flex-direction: row;
+            font-family: $brandon-font;
+            font-weight: $brandon-font-bold;
+
+            .arrow {
+                transform: rotate(90deg);
+            }
+        }
+
+        .hamburger {
+            width: 1.3rem;
+            height: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .line {
+                width: 100%;
+                height: 20%;
+                background-color: $black;
+                border-radius: .05rem;
+            }
+        }
+    }
+}

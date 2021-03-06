@@ -1,0 +1,17 @@
+@keyframes float-in {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes float-out {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -1000px;
+    }
+}

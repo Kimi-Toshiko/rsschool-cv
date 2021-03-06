@@ -1,78 +1,6 @@
 @import "vars";
-
-
-//BACKGROUND-COLORS FOR DEV USE ONLY
-
-// aside {
-//     background-color: aqua;
-//     .profile {
-//         background-color: aquamarine;
-//         img {
-//             background-color: bisque;
-//         }
-//         .info {
-//             background-color: beige;
-//             h1 {
-//                 background-color: brown;
-//             }
-//             h2 {
-//                 background-color: cadetblue;
-//             }
-//         }
-//     }
-//     .menu-wrapper {
-//          background-color: chartreuse;
-//          ul {
-//              background-color: chocolate;
-//              li {
-//                  background-color: cornflowerblue;
-//              }
-//              a {
-//                  background-color: cornsilk;
-//              }
-//          }
-//     }
-//     .footer {
-//         background-color: crimson;
-//         p {
-//             background-color: cyan;
-//             a {
-//                 background-color: darkcyan;
-//             }
-//         }
-//     }
-// }
-
-// header {
-//     background-color: lightblue;
-//     .contact-logos {
-//         background-color: lightsalmon;
-//         .social-network {
-//             background-color: lightgreen;
-//         }
-//     }
-//     .header-wrapper {
-//         background-color: lightseagreen;
-//         .contact-text {
-//             background-color: lightskyblue;
-//             .arrow {
-//                 background-color: lightslategray;
-//             }
-//             .text {
-//                 background-color: lightyellow;
-//             }
-//         }
-//         .hamburger {
-//             background-color: lime;
-//         }
-//     }
-// }
-
-
-
-
-
-
+@import "animations";
+//@import "backgrounds";
 
 html {
     font-size: 18px;
@@ -88,10 +16,32 @@ body {
 aside {
     width: 80%;
     height: 100vh;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: $gray;
+    float: left;
+    position: absolute;
+    left: -2000px;
+    z-index: 200;
+    -webkit-box-shadow: 27px 0px 71px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 27px 0px 71px 10px rgba(0,0,0,0.75);
+    box-shadow: 27px 0px 71px 10px rgba(0,0,0,0.75);
+
+    .btn-close {
+        position: absolute;
+        left: 1rem;
+        top: .5rem;
+        font-size: 1.7rem;
+        font-family: $brandon-font;
+        font-weight: $brandon-font-bold;
+        transition: all .25s linear;
+        cursor: pointer;
+        
+        &:hover {
+            color: $main-blue;
+        }
+    }
 
     .profile {
         padding: 1rem;
@@ -133,11 +83,18 @@ aside {
             a {
                 color: $black;
                 text-decoration: none;
+                transition: all .25s linear;
             }
 
             .active {
                 color: $main-blue;
                 border-bottom: 2px solid $main-blue;
+            }
+
+            &:hover {
+                a {
+                    color: $main-blue;
+                }
             }
         }
     }
@@ -164,6 +121,8 @@ aside {
 header {
     width: 100%;
     background-color: $white;
+    position: sticky;
+    z-index: 0;
 
     .contact-logos {
         background-color: $white;
@@ -236,6 +195,15 @@ header {
                 height: 20%;
                 background-color: $black;
                 border-radius: .05rem;
+                position: relative;
+                z-index: 300;
+                transition: all .3s linear;
+            }
+
+            &:hover {
+                .line {
+                    background-color: $main-blue;
+                }
             }
         }
     }

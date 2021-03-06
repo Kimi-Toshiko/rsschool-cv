@@ -34,6 +34,22 @@
   src: url(../assets/fonts/gill-sans-regular.otf);
   font-weight: 400;
 }
+@keyframes float-in {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes float-out {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -1000px;
+  }
+}
 html {
   font-size: 18px;
   font-family: "Gill Sans", sans-serif;
@@ -48,10 +64,28 @@ body {
 aside {
   width: 80%;
   height: 100vh;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #E2E2E2;
+  float: left;
+  position: absolute;
+  left: -2000px;
+  z-index: 200;
+  box-shadow: 27px 0px 71px 10px rgba(0, 0, 0, 0.75);
+}
+aside .btn-close {
+  position: absolute;
+  left: 1rem;
+  top: 0.5rem;
+  font-size: 1.7rem;
+  font-family: "Brandon Grotesque", sans-serif;
+  font-weight: 900;
+  transition: all 0.25s linear;
+  cursor: pointer;
+}
+aside .btn-close:hover {
+  color: #4D748B;
 }
 aside .profile {
   padding: 1rem;
@@ -88,10 +122,14 @@ aside .menu-wrapper ul li {
 aside .menu-wrapper ul li a {
   color: #000;
   text-decoration: none;
+  transition: all 0.25s linear;
 }
 aside .menu-wrapper ul li .active {
   color: #4D748B;
   border-bottom: 2px solid #4D748B;
+}
+aside .menu-wrapper ul li:hover a {
+  color: #4D748B;
 }
 aside .footer {
   text-align: center;
@@ -110,6 +148,8 @@ aside .footer p a:hover {
 header {
   width: 100%;
   background-color: #fff;
+  position: sticky;
+  z-index: 0;
 }
 header .contact-logos {
   background-color: #fff;
@@ -167,4 +207,10 @@ header .header-wrapper .hamburger .line {
   height: 20%;
   background-color: #000;
   border-radius: 0.05rem;
+  position: relative;
+  z-index: 300;
+  transition: all 0.3s linear;
+}
+header .header-wrapper .hamburger:hover .line {
+  background-color: #4D748B;
 }

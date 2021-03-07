@@ -127,13 +127,19 @@ header {
     .contact-logos {
         background-color: $white;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        padding: .3rem 0;
-        display: none;
+        position: absolute;
+        right: -3rem;
+        top: 0;
+        height: 100vh;
+        width: 2rem;
+        -webkit-box-shadow: -8px 0px 25px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: -8px 0px 25px -5px rgba(0,0,0,0.75);
+        box-shadow: -8px 0px 25px -5px rgba(0,0,0,0.75);
 
         .social-network {
-            margin: 0 .5rem;
+            margin: 2.5rem .5rem;
             color: $black;
             transition: all .25s ease-in;
 
@@ -176,9 +182,16 @@ header {
             flex-direction: row;
             font-family: $brandon-font;
             font-weight: $brandon-font-bold;
+            cursor: pointer;
+            transition: color .25s linear;
+            margin-right: 0;
 
             .arrow {
-                transform: rotate(90deg);
+                margin-right: .3rem;
+            }
+
+            &:hover {
+                color: $main-blue;
             }
         }
 

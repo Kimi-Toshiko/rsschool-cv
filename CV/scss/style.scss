@@ -33,9 +33,7 @@ aside {
         position: absolute;
         left: 1rem;
         top: .5rem;
-        font-size: 1.7rem;
-        font-family: $brandon-font;
-        font-weight: $brandon-font-bold;
+        @include font-settings ($brandon-font, 1.7rem, $brandon-font-bold);
         transition: all .25s linear;
         cursor: pointer;
         
@@ -59,14 +57,12 @@ aside {
             text-transform: uppercase;
 
             h1 {
-                font-family: $brandon-font;
-                font-weight: $brandon-font-bold;
-                font-size: 1.12rem;
+                @include font-settings ($brandon-font, 1.12rem, $brandon-font-bold);
                 margin-bottom: .5rem;
             }
 
             h2 {
-                font-size: 0.67rem;
+                @include font-settings ($gill-font, 0.67rem, $gill-font-regular);
                 color: $main-blue;
             }
         }
@@ -74,8 +70,7 @@ aside {
 
     .menu-wrapper {
         text-align: center;
-        font-weight: $gill-font-bold;
-        font-size: 0.84rem;
+        @include font-settings ($gill-font, 0.84rem, $gill-font-bold);
 
         ul li {
             margin: 1rem 0;
@@ -103,7 +98,7 @@ aside {
     .footer {
         text-align: center;
         color: $main-blue;
-        font-size: 0.8rem;
+        @include font-settings ($gill-font, 0.8rem, $gill-font-regular);
         margin-bottom: 1rem;
 
         p {
@@ -182,8 +177,7 @@ header {
         .contact-text {
             display: flex;
             flex-direction: row;
-            font-family: $brandon-font;
-            font-weight: $brandon-font-bold;
+            @include font-settings ($brandon-font, 1rem, $brandon-font-bold);
             cursor: pointer;
             transition: color .25s linear;
             margin-right: 0;
@@ -232,9 +226,7 @@ header {
     justify-content: space-between;
 
     .mt {
-        font-size: 3.56rem;
-        font-family: $brandon-font;
-        font-weight: $brandon-font-bold;
+        @include font-settings ($brandon-font, 3.56rem, $brandon-font-bold);
         margin: 0 5% 0 15%;
         
         &:first-child {
@@ -262,8 +254,7 @@ header {
             flex-direction: column;
             justify-content: end;
             margin-right: 5%;
-            font-size: 1.3rem;
-            font-weight: $gill-font-medium;
+            @include font-settings ($gill-font, 1.3rem, $gill-font-medium);
         }
     }
 
@@ -282,18 +273,16 @@ header {
 
         h3 {
             color: $main-blue;
-            font-family: $brandon-font;
-            font-weight: $brandon-font-light;
+            @include font-settings ($brandon-font, 1rem, $brandon-font-light);
             text-transform: uppercase;
             line-height: 26px;
         }
 
         h4 {
             margin-top: 1rem;
-            font-weight: $gill-font-bold;
+            @include font-settings ($gill-font, 1rem, $gill-font-bold);
             text-transform: uppercase;
             line-height: 22px;
-            letter-spacing: 10%;
         }
 
         .section-info {

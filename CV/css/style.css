@@ -126,9 +126,10 @@ aside .btn-close {
   position: absolute;
   left: 1rem;
   top: 0.5rem;
-  font-size: 1.7rem;
   font-family: "Brandon Grotesque", sans-serif;
   font-weight: 900;
+  font-size: 1.7rem;
+  letter-spacing: 10%;
   transition: all 0.25s linear;
   cursor: pointer;
 }
@@ -152,16 +153,22 @@ aside .profile .info h1 {
   font-family: "Brandon Grotesque", sans-serif;
   font-weight: 900;
   font-size: 1.12rem;
+  letter-spacing: 10%;
   margin-bottom: 0.5rem;
 }
 aside .profile .info h2 {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 400;
   font-size: 0.67rem;
+  letter-spacing: 10%;
   color: #4D748B;
 }
 aside .menu-wrapper {
   text-align: center;
+  font-family: "Gill Sans", sans-serif;
   font-weight: 700;
   font-size: 0.84rem;
+  letter-spacing: 10%;
 }
 aside .menu-wrapper ul li {
   margin: 1rem 0;
@@ -182,7 +189,10 @@ aside .menu-wrapper ul li:hover a {
 aside .footer {
   text-align: center;
   color: #4D748B;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 400;
   font-size: 0.8rem;
+  letter-spacing: 10%;
   margin-bottom: 1rem;
 }
 aside .footer p a {
@@ -243,6 +253,8 @@ header .header-wrapper .contact-text {
   flex-direction: row;
   font-family: "Brandon Grotesque", sans-serif;
   font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 10%;
   cursor: pointer;
   transition: color 0.25s linear;
   margin-right: 0;
@@ -286,9 +298,10 @@ header .header-wrapper .hamburger:hover .line {
   justify-content: space-between;
 }
 .main-info .mt {
-  font-size: 3.56rem;
   font-family: "Brandon Grotesque", sans-serif;
   font-weight: 900;
+  font-size: 3.56rem;
+  letter-spacing: 10%;
   margin: 0 5% 0 15%;
 }
 .main-info .mt:first-child {
@@ -312,8 +325,10 @@ header .header-wrapper .hamburger:hover .line {
   flex-direction: column;
   justify-content: end;
   margin-right: 5%;
-  font-size: 1.3rem;
+  font-family: "Gill Sans", sans-serif;
   font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 10%;
 }
 .main-info .blue-text {
   color: #4D748B;
@@ -335,15 +350,19 @@ header .header-wrapper .hamburger:hover .line {
   color: #4D748B;
   font-family: "Brandon Grotesque", sans-serif;
   font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 10%;
   text-transform: uppercase;
   line-height: 26px;
 }
 .about .gray-wrapper h4 {
   margin-top: 1rem;
+  font-family: "Gill Sans", sans-serif;
   font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 10%;
   text-transform: uppercase;
   line-height: 22px;
-  letter-spacing: 10%;
 }
 .about .gray-wrapper .section-info {
   margin-top: 1rem;

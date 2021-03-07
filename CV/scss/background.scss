@@ -1,66 +1,88 @@
 //BACKGROUND-COLORS FOR DEV USE ONLY
 
-aside {
-    background-color: aqua;
-    .profile {
-        background-color: aquamarine;
-        img {
-            background-color: bisque;
-        }
-        .info {
-            background-color: beige;
-            h1 {
-                background-color: brown;
-            }
-            h2 {
-                background-color: cadetblue;
-            }
-        }
-    }
-    .menu-wrapper {
-         background-color: chartreuse;
-         ul {
-             background-color: chocolate;
-             li {
-                 background-color: cornflowerblue;
-             }
-             a {
-                 background-color: cornsilk;
-             }
-         }
-    }
-    .footer {
-        background-color: crimson;
-        p {
-            background-color: cyan;
-            a {
-                background-color: darkcyan;
-            }
-        }
-    }
-}
+// aside {
+//     background-color: aqua;
+//     .profile {
+//         background-color: aquamarine;
+//         img {
+//             background-color: bisque;
+//         }
+//         .info {
+//             background-color: beige;
+//             h1 {
+//                 background-color: brown;
+//             }
+//             h2 {
+//                 background-color: cadetblue;
+//             }
+//         }
+//     }
+//     .menu-wrapper {
+//          background-color: chartreuse;
+//          ul {
+//              background-color: chocolate;
+//              li {
+//                  background-color: cornflowerblue;
+//              }
+//              a {
+//                  background-color: cornsilk;
+//              }
+//          }
+//     }
+//     .footer {
+//         background-color: crimson;
+//         p {
+//             background-color: cyan;
+//             a {
+//                 background-color: darkcyan;
+//             }
+//         }
+//     }
+// }
 
-header {
-    background-color: lightblue;
-    .contact-logos {
-        background-color: lightsalmon;
-        .social-network {
-            background-color: lightgreen;
+// header {
+//     background-color: lightblue;
+//     .contact-logos {
+//         background-color: lightsalmon;
+//         .social-network {
+//             background-color: lightgreen;
+//         }
+//     }
+//     .header-wrapper {
+//         background-color: lightseagreen;
+//         .contact-text {
+//             background-color: lightskyblue;
+//             .arrow {
+//                 background-color: lightslategray;
+//             }
+//             .text {
+//                 background-color: lightyellow;
+//             }
+//         }
+//         .hamburger {
+//             background-color: lime;
+//         }
+//     }
+// }
+
+.main-info {
+    background-color: antiquewhite;
+    .mt {
+        background-color: aqua;
+        b {
+            background-color: aquamarine;
         }
     }
-    .header-wrapper {
-        background-color: lightseagreen;
-        .contact-text {
-            background-color: lightskyblue;
-            .arrow {
-                background-color: lightslategray;
-            }
-            .text {
-                background-color: lightyellow;
-            }
+    .middle {
+        background-color: beige;
+        .mt {
+            background-color: brown;
         }
-        .hamburger {
-            background-color: lime;
+        .adt {
+            background-color: burlywood;
         }
+    }
+    .blue-text {
+        background-color: cadetblue;
     }
 }

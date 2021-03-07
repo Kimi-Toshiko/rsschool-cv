@@ -1,5 +1,6 @@
 @import "vars";
 @import "animations";
+@import "mixins";
 //@import "background";
 
 html {
@@ -21,7 +22,7 @@ aside {
     justify-content: space-between;
     background-color: $gray;
     float: left;
-    position: absolute;
+    position: fixed;
     left: -2000px;
     z-index: 200;
     -webkit-box-shadow: 27px 0px 71px 10px rgba(0,0,0,0.75);
@@ -224,10 +225,7 @@ header {
 }
 
 .main-info {
-    background-image: url(../assets/img/bgs/main-bg.png);
-    background-size: 150% 100%;
-    background-position: center;
-    width: 100%;
+    @include background('../assets/img/bgs/main-bg.png');
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -271,5 +269,104 @@ header {
 
     .blue-text {
         color: $main-blue;
+    }
+}
+
+.about {
+    background-color: $light-gray;
+
+    .gray-wrapper {        
+        @include background ('../assets/img/bgs/about-bg.png');
+        padding: 1rem 2.5%;
+        width: 95%;
+
+        h3 {
+            color: $main-blue;
+            font-family: $brandon-font;
+            font-weight: $brandon-font-light;
+            text-transform: uppercase;
+            line-height: 26px;
+        }
+
+        h4 {
+            margin-top: 1rem;
+            font-weight: $gill-font-bold;
+            text-transform: uppercase;
+            line-height: 22px;
+            letter-spacing: 10%;
+        }
+
+        .section-info {
+            margin-top: 1rem;
+
+            p {
+                font-weight: $gill-font-regular;
+                margin: .5rem 0;
+                line-height: 35px;
+                letter-spacing: 1%;
+
+                &:first-child {
+                    font-weight: $gill-font-medium;
+                    color: $main-blue;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        .skills {
+            .skill {
+                background-color: $white;
+                width: calc(100% - 2rem);
+                height: 3.5rem;
+                margin: .7rem 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 1.5rem 1rem;
+
+                &:first-child {
+                    border-bottom: .3rem solid #FFA500;
+
+                    .img {
+                        background-color: #FFA500;
+                    }
+                }
+
+                &:nth-child(2) {
+                    border-bottom: .3rem solid #41C8F4;
+
+                    .img {
+                        background-color: #41C8F4;
+                    }
+                }
+
+                &:last-child {
+                    border-bottom: .3rem solid #B041F4;
+
+                    .img {
+                        background-color: #B041F4;
+                    }
+                }
+
+                .img {
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    i {
+                        color: $white;
+                    }
+                }
+
+                p {
+                    font-weight: $gill-font-regular;
+                    letter-spacing: 10%;
+                }
+            }
+        }
     }
 }

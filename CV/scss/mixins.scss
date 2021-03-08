@@ -12,3 +12,23 @@
     font-size: $font-size;
     letter-spacing: 10%;
 }
+
+@mixin heading-3 {
+    color: $main-blue;
+    text-transform: uppercase;
+    line-height: 26px;
+    @include font-settings ($brandon-font, 1rem, $brandon-font-light);
+}
+
+@mixin heading-4 {
+    margin-top: 1rem;
+    @include font-settings ($gill-font, 1rem, $gill-font-bold);
+    text-transform: uppercase;
+    line-height: 22px;
+}
+
+@mixin flex ($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}

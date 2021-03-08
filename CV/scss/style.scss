@@ -17,9 +17,7 @@ body {
 aside {
     width: 80%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex (column, space-between);
     background-color: $gray;
     float: left;
     position: fixed;
@@ -123,9 +121,7 @@ header {
 
     .contact-logos {
         background-color: $white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex (column, center);
         position: absolute;
         right: -3rem;
         top: 0;
@@ -169,9 +165,7 @@ header {
     }
 
     .header-wrapper {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
+        @include flex (row-reverse, space-between);
         padding: .6rem .5rem;
 
         .contact-text {
@@ -194,9 +188,7 @@ header {
         .hamburger {
             width: 1.3rem;
             height: 1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            @include flex (column, space-between);
             cursor: pointer;
 
             .line {
@@ -221,9 +213,7 @@ header {
 .main-info {
     @include background('../assets/img/bgs/main-bg.png');
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex (column, space-between);
 
     .mt {
         @include font-settings ($brandon-font, 3.56rem, $brandon-font-bold);
@@ -239,8 +229,7 @@ header {
     }
 
     .middle {
-        display: flex;
-        flex-direction: row;
+        @include flex (row, start);
         margin-top: -5rem;
 
         .mt {
@@ -250,9 +239,7 @@ header {
 
         .adt {
             width: 40%;
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
+            @include flex (column, end);
             margin-right: 5%;
             @include font-settings ($gill-font, 1.3rem, $gill-font-medium);
         }
@@ -272,17 +259,11 @@ header {
         width: 95%;
 
         h3 {
-            color: $main-blue;
-            @include font-settings ($brandon-font, 1rem, $brandon-font-light);
-            text-transform: uppercase;
-            line-height: 26px;
+            @include heading-3;
         }
 
         h4 {
-            margin-top: 1rem;
-            @include font-settings ($gill-font, 1rem, $gill-font-bold);
-            text-transform: uppercase;
-            line-height: 22px;
+            @include heading-4;
         }
 
         .section-info {
@@ -308,9 +289,7 @@ header {
                 width: calc(100% - 2rem);
                 height: 3.5rem;
                 margin: .7rem 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
+                @include flex (column, space-between);
                 padding: 1.5rem 1rem;
 
                 &:first-child {
@@ -341,9 +320,7 @@ header {
                     width: 2rem;
                     height: 2rem;
                     border-radius: 50%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
+                    @include flex (column, center);
                     align-items: center;
 
                     i {

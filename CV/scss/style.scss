@@ -255,8 +255,7 @@ header {
 
     .gray-wrapper {        
         @include background ('../assets/img/bgs/about-bg.png');
-        padding: 1rem 2.5%;
-        width: 95%;
+        @include section-style;
 
         h3 {
             @include heading-3;
@@ -331,6 +330,210 @@ header {
                 p {
                     font-weight: $gill-font-regular;
                     letter-spacing: 10%;
+                }
+            }
+        }
+    }
+}
+
+.my-skills {
+    @include section-style;
+    @include background ('../assets/img/bgs/skills-bg.png');
+    width: 95%;
+
+    h3 {
+        @include heading-3;
+    }
+
+    .what-am-i {
+        margin-top: 1rem;
+
+        h4 {
+            @include heading-4;
+        }
+
+        ul {
+            margin-top: .75rem;
+            list-style-type: circle;
+            list-style-image: url(../assets/img/checkmark-sm.png);
+
+            li {
+                @include font-settings ($gill-font, 1rem, $gill-font-regular);
+                line-height: 1.8rem;
+            }
+        }
+    }
+
+    .my-languages {
+        margin-top: 1rem;
+
+        h4 {
+            @include heading-4;
+        }
+
+        .languages {
+            h5 {
+                color: $main-blue;
+                @include font-settings ($gill-font, 1rem, $gill-font-regular);
+                font-style: italic;
+                margin-top: 1rem;
+            }
+
+            .progress {
+                margin-top: .5rem;
+
+                .labels {
+                    @include flex (row, space-between);
+                }
+
+                .progress-scale {
+                    height: .3rem;
+                    width: 100%;
+                    margin-top: .2rem;
+                    border: 2px solid #4696C3;
+                    border-radius: 2rem;
+
+                    &::before {
+                        content: "";
+                        height: .3rem;
+                        border-radius: 2rem;
+                        width: 95%;
+                        position: absolute;
+                        background-color: #63ACD4;
+                    }
+                }
+            }
+        }
+
+        .human-languages {
+            .progress {
+                &:nth-child(3) {
+                    .progress-scale {
+                        border-color: #841515;
+
+                        &::before {
+                            background-color: #A13535;
+                            width: 76%;
+                        }
+                    }
+                }
+
+                &:nth-child(4) {
+                    .progress-scale {
+                        border-color: #E49E1E;
+
+                        &::before {
+                            background-color: #F0B039;
+                            width: 28%;
+                        }
+                    }
+                }
+
+                &:nth-child(5) {
+                    .progress-scale {
+                        border-color: #429211;
+
+                        &::before {
+                            background-color: #62BB2C;
+                            width: 28%;
+                        }
+                    }
+                }
+
+                &:nth-child(6) {
+                    .progress-scale {
+                        border-color: #BD1566;
+
+                        &::before {
+                            background-color: #E23186;
+                            width: 28%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .computer-languages {
+            .progress {
+                &:nth-child(2) {
+                    .progress-scale {
+                        border-color: #BCB400;
+
+                        &::before {
+                            background-color: #D9D583;
+                            width: 90%;
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    .progress-scale {
+                        border-color: #96007D;
+
+                        &::before {
+                            background-color: #D05ABD;
+                            width: 81%;
+                        }
+                    }
+                }
+
+                &:nth-child(4) {
+                    .progress-scale {
+                        border-color: #466600;
+
+                        &::before {
+                            background-color: #709A17;
+                            width: 62%;
+                        }
+                    }
+                }
+
+                &:nth-child(5) {
+                    .progress-scale {
+                        border-color: #79319B;
+
+                        &::before {
+                            background-color: #A167BC;
+                            width: 33%;
+                        }
+                    }
+                }
+
+                &:nth-child(6) {
+                    .progress-scale {
+                        border-color: #2A8484;
+
+                        &::before {
+                            background-color: #549A9A;
+                            width: 19%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .front-end-libraries {
+            .progress {
+                &:nth-child(2) {
+                    .progress-scale {
+                        border-color: #282368;
+
+                        &::before {
+                            background-color: #545089;
+                            width: 67%;
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    .progress-scale {
+                        border-color: #346328;
+
+                        &::before {
+                            background-color: #649059;
+                            width: 57%;
+                        }
+                    }
                 }
             }
         }

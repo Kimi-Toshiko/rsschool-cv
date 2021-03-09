@@ -423,3 +423,168 @@ header .header-wrapper .hamburger:hover .line {
   font-weight: 400;
   letter-spacing: 10%;
 }
+
+.my-skills {
+  padding: 1rem 2.5%;
+  width: 95%;
+  background-image: url("../assets/img/bgs/skills-bg.png");
+  background-size: 150% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  width: 95%;
+}
+.my-skills h3 {
+  color: #4D748B;
+  text-transform: uppercase;
+  line-height: 26px;
+  font-family: "Brandon Grotesque", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 10%;
+}
+.my-skills .what-am-i {
+  margin-top: 1rem;
+}
+.my-skills .what-am-i h4 {
+  margin-top: 1rem;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+.my-skills .what-am-i ul {
+  margin-top: 0.75rem;
+  list-style-type: circle;
+  list-style-image: url(../assets/img/checkmark-sm.png);
+}
+.my-skills .what-am-i ul li {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 10%;
+  line-height: 1.8rem;
+}
+.my-skills .my-languages {
+  margin-top: 1rem;
+}
+.my-skills .my-languages h4 {
+  margin-top: 1rem;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+.my-skills .my-languages .languages h5 {
+  color: #4D748B;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 10%;
+  font-style: italic;
+  margin-top: 1rem;
+}
+.my-skills .my-languages .languages .progress {
+  margin-top: 0.5rem;
+}
+.my-skills .my-languages .languages .progress .labels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.my-skills .my-languages .languages .progress .progress-scale {
+  height: 0.3rem;
+  width: 100%;
+  margin-top: 0.2rem;
+  border: 2px solid #4696C3;
+  border-radius: 2rem;
+}
+.my-skills .my-languages .languages .progress .progress-scale::before {
+  content: "";
+  height: 0.3rem;
+  border-radius: 2rem;
+  width: 95%;
+  position: absolute;
+  background-color: #63ACD4;
+}
+.my-skills .my-languages .human-languages .progress:nth-child(3) .progress-scale {
+  border-color: #841515;
+}
+.my-skills .my-languages .human-languages .progress:nth-child(3) .progress-scale::before {
+  background-color: #A13535;
+  width: 76%;
+}
+.my-skills .my-languages .human-languages .progress:nth-child(4) .progress-scale {
+  border-color: #E49E1E;
+}
+.my-skills .my-languages .human-languages .progress:nth-child(4) .progress-scale::before {
+  background-color: #F0B039;
+  width: 28%;
+}
+.my-skills .my-languages .human-languages .progress:nth-child(5) .progress-scale {
+  border-color: #429211;
+}
+.my-skills .my-languages .human-languages .progress:nth-child(5) .progress-scale::before {
+  background-color: #62BB2C;
+  width: 28%;
+}
+.my-skills .my-languages .human-languages .progress:nth-child(6) .progress-scale {
+  border-color: #BD1566;
+}
+.my-skills .my-languages .human-languages .progress:nth-child(6) .progress-scale::before {
+  background-color: #E23186;
+  width: 28%;
+}
+.my-skills .my-languages .computer-languages .progress:nth-child(2) .progress-scale {
+  border-color: #BCB400;
+}
+.my-skills .my-languages .computer-languages .progress:nth-child(2) .progress-scale::before {
+  background-color: #D9D583;
+  width: 90%;
+}
+.my-skills .my-languages .computer-languages .progress:nth-child(3) .progress-scale {
+  border-color: #96007D;
+}
+.my-skills .my-languages .computer-languages .progress:nth-child(3) .progress-scale::before {
+  background-color: #D05ABD;
+  width: 81%;
+}
+.my-skills .my-languages .computer-languages .progress:nth-child(4) .progress-scale {
+  border-color: #466600;
+}
+.my-skills .my-languages .computer-languages .progress:nth-child(4) .progress-scale::before {
+  background-color: #709A17;
+  width: 62%;
+}
+.my-skills .my-languages .computer-languages .progress:nth-child(5) .progress-scale {
+  border-color: #79319B;
+}
+.my-skills .my-languages .computer-languages .progress:nth-child(5) .progress-scale::before {
+  background-color: #A167BC;
+  width: 33%;
+}
+.my-skills .my-languages .computer-languages .progress:nth-child(6) .progress-scale {
+  border-color: #2A8484;
+}
+.my-skills .my-languages .computer-languages .progress:nth-child(6) .progress-scale::before {
+  background-color: #549A9A;
+  width: 19%;
+}
+.my-skills .my-languages .front-end-libraries .progress:nth-child(2) .progress-scale {
+  border-color: #282368;
+}
+.my-skills .my-languages .front-end-libraries .progress:nth-child(2) .progress-scale::before {
+  background-color: #545089;
+  width: 67%;
+}
+.my-skills .my-languages .front-end-libraries .progress:nth-child(3) .progress-scale {
+  border-color: #346328;
+}
+.my-skills .my-languages .front-end-libraries .progress:nth-child(3) .progress-scale::before {
+  background-color: #649059;
+  width: 57%;
+}

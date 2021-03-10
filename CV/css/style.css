@@ -741,3 +741,97 @@ header .header-wrapper .hamburger:hover .line {
 .education .study ul li a:hover {
   color: #4D748B;
 }
+
+.code-examples {
+  padding: 1rem 2.5%;
+  width: 95%;
+  background-color: #F4F4F4;
+}
+.code-examples .gray-wrapper {
+  background-image: url("../assets/img/bgs/code-examples-bg.png");
+  background-size: 150% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.code-examples .gray-wrapper h3 {
+  color: #4D748B;
+  text-transform: uppercase;
+  line-height: 26px;
+  font-family: "Brandon Grotesque", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 10%;
+}
+.code-examples .gray-wrapper h4 {
+  margin-top: 1rem;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+.code-examples .gray-wrapper .project {
+  width: 100%;
+  margin-top: 0.8rem;
+  border-radius: 1rem;
+}
+.code-examples .gray-wrapper .project .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: calc(100% - 2rem);
+  height: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.code-examples .gray-wrapper .project:nth-child(3) {
+  background-image: url("../assets/img/pizza-sm.png");
+  background-size: cover;
+}
+.code-examples .gray-wrapper .project:nth-child(4) {
+  background-image: url("../assets/img/pg-purify.png");
+  background-size: cover;
+}
+.code-examples .gray-wrapper .project p {
+  color: #fff;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 10%;
+  margin-bottom: 1rem;
+}
+.code-examples .gray-wrapper .project h5 {
+  color: #fff;
+  font-family: "Brandon Grotesque", sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.code-examples .gray-wrapper .project .demo-code {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.code-examples .gray-wrapper .project .demo-code .demo-ws, .code-examples .gray-wrapper .project .demo-code .code-ws {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.25s ease-in;
+  cursor: pointer;
+}
+.code-examples .gray-wrapper .project .demo-code .demo-ws a, .code-examples .gray-wrapper .project .demo-code .code-ws a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.25s ease-out;
+}
+.code-examples .gray-wrapper .project .demo-code .demo-ws:hover, .code-examples .gray-wrapper .project .demo-code .code-ws:hover {
+  background-color: #4D748B;
+}
+.code-examples .gray-wrapper .project .demo-code .demo-ws:hover a, .code-examples .gray-wrapper .project .demo-code .code-ws:hover a {
+  color: #fff;
+}
+.code-examples .gray-wrapper .project .demo-code .code-ws {
+  margin-left: 0.5rem;
+}

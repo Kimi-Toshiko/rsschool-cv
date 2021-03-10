@@ -657,3 +657,87 @@ header {
         }
     }
 }
+
+.code-examples {
+    @include section-style;
+    background-color: $light-gray;
+
+    .gray-wrapper {
+        @include background ('../assets/img/bgs/code-examples-bg.png');
+
+        h3 {
+            @include heading-3;
+        }
+
+        h4 {
+            @include heading-4;
+        }
+
+        .project {
+            width: 100%;
+            margin-top: .8rem;
+            border-radius: 1rem;
+
+            .overlay {
+                background-color: rgba(0,0,0,0.5);
+                width: calc(100% - 2rem);
+                height: 100%;
+                border-radius: 1rem;
+                padding: 1rem;
+            }
+            
+            &:nth-child(3) {
+                background-image: url('../assets/img/pizza-sm.png');
+                background-size: cover;
+            }
+
+            &:nth-child(4) {
+                background-image: url('../assets/img/pg-purify.png');
+                background-size: cover;
+            }
+
+            p {
+                color: $white;
+                @include font-settings ($gill-font, 1rem, $gill-font-regular);
+                margin-bottom: 1rem;
+            }
+
+            h5 {
+                color: $white;
+                @include font-settings ($brandon-font, 1.5rem, $brandon-font-bold);
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+            }
+
+            .demo-code {
+                @include flex (row, start);
+
+                .demo-ws, .code-ws {
+                    background-color: rgba(255, 255, 255, .7);
+                    padding: .5rem;
+                    border-radius: .5rem;
+                    transition: all .25s ease-in;
+                    cursor: pointer;
+
+                    a {
+                        color: $black;
+                        text-decoration: none;
+                        transition: all .25s ease-out;
+                    }
+
+                    &:hover {
+                        background-color: $main-blue;
+
+                        a {
+                            color: $white;
+                        }
+                    }
+                }
+
+                .code-ws {
+                    margin-left: .5rem;
+                }
+            }
+        }
+    }
+}

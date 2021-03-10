@@ -1,7 +1,7 @@
 @import "vars";
 @import "animations";
 @import "mixins";
-//@import "background";
+@import "background";
 
 html {
     font-size: 18px;
@@ -116,7 +116,7 @@ header {
     width: 100%;
     background-color: $white;
     position: fixed;
-    z-index: 0;
+    z-index: 100;
     height: 2.5rem;
 
     .contact-logos {
@@ -399,6 +399,7 @@ header {
                         border-radius: 2rem;
                         width: 95%;
                         position: absolute;
+                        z-index: 0;
                         background-color: #63ACD4;
                     }
                 }
@@ -533,6 +534,63 @@ header {
                             background-color: #649059;
                             width: 57%;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.experience {
+    @include section-style;
+    background-color: $light-gray;
+
+    .gray-wrapper {
+        @include background ('../assets/img/bgs/exp-bg.png');
+
+        h3 {
+            @include heading-3;
+        }
+
+        h4 {
+            @include heading-4;
+        }
+
+        .experience-block {
+            margin-top: 1.5rem;
+
+            .img-block {
+                background-color: $white;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                @include flex (column, center);
+                align-items: center;
+                margin: 0 auto;
+            }
+
+            .info {
+                background-color: $white;
+                padding: 1rem .8rem;
+                border-radius: 1.5rem;
+
+                h5 {
+                    @include font-settings ($gill-font, 1rem, $gill-font-bold);
+                    color: $main-blue;
+                    margin-bottom: .5rem;
+                }
+                
+                p {
+                    @include font-settings ($gill-font, 0.78rem, $gill-font-regular);
+                    color: $main-blue;
+                }
+
+                ul {
+                    list-style-image: url('../assets/img/checkmark-sm.png');
+
+                    li {
+                        @include font-settings ($gill-font, 1rem, $gill-font-regular);
+                        line-height: 30px;
                     }
                 }
             }

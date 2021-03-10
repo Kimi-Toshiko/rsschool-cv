@@ -170,8 +170,11 @@ aside .menu-wrapper {
   font-size: 0.84rem;
   letter-spacing: 10%;
 }
+aside .menu-wrapper ul {
+  list-style-type: none;
+}
 aside .menu-wrapper ul li {
-  margin: 1rem 0;
+  margin: 1rem 0 1rem -2rem;
   text-transform: uppercase;
 }
 aside .menu-wrapper ul li a {

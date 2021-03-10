@@ -664,3 +664,80 @@ header .header-wrapper .hamburger:hover .line {
   letter-spacing: 10%;
   line-height: 30px;
 }
+
+.education {
+  background-image: url("../assets/img/bgs/study-bg.png");
+  background-size: 150% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 1rem 2.5%;
+  width: 95%;
+}
+.education h3 {
+  color: #4D748B;
+  text-transform: uppercase;
+  line-height: 26px;
+  font-family: "Brandon Grotesque", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 10%;
+}
+.education h4 {
+  margin-top: 1rem;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+.education .study {
+  margin-top: 1.5rem;
+}
+.education .study img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.education .study p {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 10%;
+  line-height: 30px;
+}
+.education .study p:nth-child(3) {
+  margin-top: 0.8rem;
+}
+.education .study p b {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 10%;
+}
+.education .study p .light-text {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 10%;
+  margin-left: 0.5rem;
+}
+.education .study ul {
+  list-style-image: url("../assets/img/blue-bullet-sm.png");
+}
+.education .study ul li {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 10%;
+  line-height: 30px;
+}
+.education .study ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.25s linear;
+}
+.education .study ul li a:hover {
+  color: #4D748B;
+}

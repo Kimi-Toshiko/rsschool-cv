@@ -1,248 +1,263 @@
 //BACKGROUND-COLORS FOR DEV USE ONLY
 
-// aside {
-//     background-color: aqua;
-//     .profile {
-//         background-color: aquamarine;
-//         img {
-//             background-color: bisque;
-//         }
-//         .info {
-//             background-color: beige;
-//             h1 {
-//                 background-color: brown;
-//             }
-//             h2 {
-//                 background-color: cadetblue;
-//             }
-//         }
-//     }
-//     .menu-wrapper {
-//          background-color: chartreuse;
-//          ul {
-//              background-color: chocolate;
-//              li {
-//                  background-color: cornflowerblue;
-//              }
-//              a {
-//                  background-color: cornsilk;
-//              }
-//          }
-//     }
-//     .footer {
-//         background-color: crimson;
-//         p {
-//             background-color: cyan;
-//             a {
-//                 background-color: darkcyan;
-//             }
-//         }
-//     }
-// }
+aside {
+    background-color: aqua;
+    .profile {
+        background-color: aquamarine;
+        img {
+            background-color: bisque;
+        }
+        .info {
+            background-color: beige;
+            h1 {
+                background-color: brown;
+            }
+            h2 {
+                background-color: cadetblue;
+            }
+        }
+    }
+    .menu-wrapper {
+         background-color: chartreuse;
+         ul {
+             background-color: chocolate;
+             li {
+                 background-color: cornflowerblue;
+             }
+             a {
+                 background-color: cornsilk;
+             }
+         }
+    }
+    .footer {
+        background-color: crimson;
+        p {
+            background-color: cyan;
+            a {
+                background-color: darkcyan;
+            }
+        }
+    }
+}
 
-// header {
-//     background-color: lightblue;
-//     .contact-logos {
-//         background-color: lightsalmon;
-//         .social-network {
-//             background-color: lightgreen;
-//         }
-//     }
-//     .header-wrapper {
-//         background-color: lightseagreen;
-//         .contact-text {
-//             background-color: lightskyblue;
-//             .arrow {
-//                 background-color: lightslategray;
-//             }
-//             .text {
-//                 background-color: lightyellow;
-//             }
-//         }
-//         .hamburger {
-//             background-color: lime;
-//         }
-//     }
-// }
+header {
+    background-color: lightblue;
+    .contact-logos {
+        background-color: lightsalmon;
+        .social-network {
+            background-color: lightgreen;
+        }
+    }
+    .header-wrapper {
+        background-color: lightseagreen;
+        .contact-text {
+            background-color: lightskyblue;
+            .arrow {
+                background-color: lightslategray;
+            }
+            .text {
+                background-color: lightyellow;
+            }
+        }
+        .hamburger {
+            background-color: lime;
+        }
+    }
+}
 
-// .main-info {
-//     background-color: antiquewhite;
-//     .mt {
-//         background-color: aqua;
-//         b {
-//             background-color: aquamarine;
-//         }
-//     }
-//     .middle {
-//         background-color: beige;
-//         .mt {
-//             background-color: brown;
-//         }
-//         .adt {
-//             background-color: burlywood;
-//         }
-//     }
-//     .blue-text {
-//         background-color: cadetblue;
-//     }
-// }
+.main-info {
+    background-color: antiquewhite;
+    .mt {
+        background-color: aqua;
+        b {
+            background-color: aquamarine;
+        }
+    }
+    .middle {
+        background-color: beige;
+        .mt {
+            background-color: brown;
+        }
+        .adt {
+            background-color: burlywood;
+        }
+    }
+    .blue-text {
+        background-color: cadetblue;
+    }
+}
 
-// .about {
-//     background-color: chocolate;
-//     h3 {
-//         background-color: coral;
-//     }
-//     h4 {
-//         background-color: cornflowerblue;
-//     }
-//     .section-info {
-//         background-color: cornsilk;
-//         p {
-//             background-color: crimson;
-//         }
-//     }
-//     .skills {
-//         background-color: cyan;
-//         .skill {
-//             background-color: darkcyan;
-//             .img {
-//                 background-color: darkgoldenrod;
-//             }
-//             p {
-//                 background-color: darkgreen;
-//             }
-//         }
-//     }
-// }
+.about {
+    background-color: chocolate;
+    h3 {
+        background-color: coral;
+    }
+    h4 {
+        background-color: cornflowerblue;
+    }
+    .section-info {
+        background-color: cornsilk;
+        p {
+            background-color: crimson;
+        }
+    }
+    .skills {
+        background-color: cyan;
+        .skill {
+            background-color: darkcyan;
+            .img {
+                background-color: darkgoldenrod;
+            }
+            p {
+                background-color: darkgreen;
+            }
+        }
+    }
+}
 
-// .my-skills {
-//     h3 {
-//         background-color: darkkhaki;
-//     }
-//     .what-am-i {
-//         background-color: darkmagenta;
-//         h4 {
-//             background-color: darkolivegreen;
-//         }
-//         ul {
-//             background-color: darkorange;
-//             li {
-//                 background-color: darkorchid;
-//             }
-//         }
-//     }
-//     .my-languages {
-//         background-color: darkred;
-//         h4 {
-//             background-color: darksalmon;
-//         }
-//         .languages {
-//             background-color: darkseagreen;
-//             h5 {
-//                 background-color: darkslateblue;
-//             }
-//             .progress {
-//                 background-color: darkslategray;
-//                 .labels {
-//                     background-color: darkturquoise;
-//                     p {
-//                         background-color: darkviolet;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+.my-skills {
+    h3 {
+        background-color: darkkhaki;
+    }
+    .what-am-i {
+        background-color: darkmagenta;
+        h4 {
+            background-color: darkolivegreen;
+        }
+        ul {
+            background-color: darkorange;
+            li {
+                background-color: darkorchid;
+            }
+        }
+    }
+    .my-languages {
+        background-color: darkred;
+        h4 {
+            background-color: darksalmon;
+        }
+        .languages {
+            background-color: darkseagreen;
+            h5 {
+                background-color: darkslateblue;
+            }
+            .progress {
+                background-color: darkslategray;
+                .labels {
+                    background-color: darkturquoise;
+                    p {
+                        background-color: darkviolet;
+                    }
+                }
+            }
+        }
+    }
+}
 
-// .experience {
-//     h3 {
-//         background-color: deeppink;
-//     }
-//     h4 {
-//         background-color: deepskyblue;
-//     }
-//     .experience-block {
-//         background-color: firebrick;
-//         .img-block {
-//             background-color: dodgerblue;
-//         }
-//         .info {
-//             background-color: forestgreen;
-//             h5 {
-//                 background-color: fuchsia;
-//             }
-//             p {
-//                 background-color: gold;
-//             }
-//             ul {
-//                 background-color: green;
-//                 li {
-//                     background-color: goldenrod;
-//                 }
-//             }
-//         }
-//     }
-// }
+.experience {
+    h3 {
+        background-color: deeppink;
+    }
+    h4 {
+        background-color: deepskyblue;
+    }
+    .experience-block {
+        background-color: firebrick;
+        .img-block {
+            background-color: dodgerblue;
+        }
+        .info {
+            background-color: forestgreen;
+            h5 {
+                background-color: fuchsia;
+            }
+            p {
+                background-color: gold;
+            }
+            ul {
+                background-color: green;
+                li {
+                    background-color: goldenrod;
+                }
+            }
+        }
+    }
+}
 
-// .education {
-//     h3 {
-//         background-color: greenyellow;
-//     }
-//     h4 {
-//         background-color: grey;
-//     }
-//     .study {
-//         background-color: hotpink;
-//         img {
-//             background-color: khaki;
-//         }
-//         p {
-//             background-color: lavender;
-//             b {
-//                 background-color: lavenderblush;
-//             }
-//             .light-text {
-//                 background-color: lawngreen;
-//             }
-//         }
-//         ul {
-//             background-color: lemonchiffon;
-//             li {
-//                 background-color: lightblue;
-//                 a {
-//                     background-color: lightcoral;
-//                 }
-//             }
-//         }
-//     }
-// }
+.education {
+    h3 {
+        background-color: greenyellow;
+    }
+    h4 {
+        background-color: grey;
+    }
+    .study {
+        background-color: hotpink;
+        img {
+            background-color: khaki;
+        }
+        p {
+            background-color: lavender;
+            b {
+                background-color: lavenderblush;
+            }
+            .light-text {
+                background-color: lawngreen;
+            }
+        }
+        ul {
+            background-color: lemonchiffon;
+            li {
+                background-color: lightblue;
+                a {
+                    background-color: lightcoral;
+                }
+            }
+        }
+    }
+}
 
-// .code-examples {
-//     h3 {
-//         background-color: lightcyan;
-//     }
-//     h4 {
-//         background-color: lightgoldenrodyellow;
-//     }
-//     .project {
-//         background-color: lightgreen;
-//         p {
-//             background-color: lightpink;
-//         }
-//         h5 {
-//             background-color: lightsalmon;
-//         }
-//         .demo-ws {
-//             background-color: lightseagreen;
-//             i {
-//                 background-color: lightskyblue;
-//             }
-//         }
-//         .code-ws {
-//             background-color: lightslategray;
-//             i {
-//                 background-color: lightyellow;
-//             }
-//         }
-//     }
-// }
+.code-examples {
+    h3 {
+        background-color: lightcyan;
+    }
+    h4 {
+        background-color: lightgoldenrodyellow;
+    }
+    .project {
+        background-color: lightgreen;
+        p {
+            background-color: lightpink;
+        }
+        h5 {
+            background-color: lightsalmon;
+        }
+        .demo-ws {
+            background-color: lightseagreen;
+            i {
+                background-color: lightskyblue;
+            }
+        }
+        .code-ws {
+            background-color: lightslategray;
+            i {
+                background-color: lightyellow;
+            }
+        }
+    }
+}
+
+.interests {
+    h3 {
+        background-color: lime;
+    }
+    h4 {
+        background-color: magenta;
+    }
+    .info {
+        background-color: maroon;
+        p {
+            background-color: mediumaquamarine;
+        }
+    }
+}

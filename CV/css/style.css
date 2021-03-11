@@ -635,7 +635,7 @@ header .header-wrapper .hamburger:hover .line {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 0.4rem auto;
 }
 .experience .gray-wrapper .experience-block .info {
   background-color: #fff;
@@ -837,4 +837,53 @@ header .header-wrapper .hamburger:hover .line {
 }
 .code-examples .gray-wrapper .project .demo-code .code-ws {
   margin-left: 0.5rem;
+}
+
+.interests {
+  padding: 1rem 2.5%;
+  width: 95%;
+  background-image: url("../assets/img/bgs/interests-bg.png");
+  background-size: 150% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  width: 95%;
+}
+.interests h3 {
+  color: #4D748B;
+  text-transform: uppercase;
+  line-height: 26px;
+  font-family: "Brandon Grotesque", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 10%;
+}
+.interests h4 {
+  margin-top: 1rem;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+  line-height: 22px;
+}
+.interests .info {
+  margin-top: 1rem;
+}
+.interests .info p {
+  margin-bottom: 0.8rem;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 10%;
+  line-height: 30px;
+}
+.interests .info p em {
+  font-style: italic;
+}
+.interests .info p strong {
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 10%;
 }

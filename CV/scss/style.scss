@@ -1,7 +1,7 @@
 @import "vars";
 @import "animations";
 @import "mixins";
-@import "background";
+//@import "background";
 
 html {
     font-size: 18px;
@@ -570,7 +570,7 @@ header {
                 border-radius: 50%;
                 @include flex (column, center);
                 align-items: center;
-                margin: 0 auto;
+                margin: 0 auto .4rem auto;
             }
 
             .info {
@@ -741,6 +741,38 @@ header {
                 .code-ws {
                     margin-left: .5rem;
                 }
+            }
+        }
+    }
+}
+
+.interests {
+    @include section-style;
+    @include background ('../assets/img/bgs/interests-bg.png');
+    width: 95%;
+
+    h3 {
+        @include heading-3;
+    }
+
+    h4 {
+        @include heading-4;
+    }
+
+    .info {
+        margin-top: 1rem;
+
+        p {
+            margin-bottom: .8rem;
+            @include font-settings ($gill-font, 1rem, $gill-font-regular);
+            line-height: 30px;
+
+            em {
+                font-style: italic;
+            }
+
+            strong {
+                @include font-settings ($gill-font, 1rem, $gill-font-bold);
             }
         }
     }

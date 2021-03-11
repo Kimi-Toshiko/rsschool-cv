@@ -633,6 +633,15 @@ header {
 
             b {
                 @include font-settings ($gill-font, 1rem, $gill-font-medium);
+
+                a {
+                    color: $black;
+                    transition: all .25s linear;
+
+                    &:hover {
+                        color: $main-blue;
+                    }
+                }
             }
 
             .light-text {

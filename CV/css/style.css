@@ -3,44 +3,37 @@
   src: url(../assets/fonts/brandon-grotesque-black.otf);
   font-weight: 900;
 }
-
 @font-face {
   font-family: "Brandon Grotesque";
   src: url(../assets/fonts/brandon-grotesque-light.otf);
   font-weight: 300;
 }
-
 @font-face {
   font-family: "Gill Sans";
   src: url(../assets/fonts/gill-sans-bold.otf);
   font-weight: 700;
 }
-
 @font-face {
   font-family: "Gill Sans";
   src: url(../assets/fonts/gill-sans-italic.otf);
   font-weight: 400;
   font-style: italic;
 }
-
 @font-face {
   font-family: "Gill Sans";
   src: url(../assets/fonts/gill-sans-light.otf);
   font-weight: 300;
 }
-
 @font-face {
   font-family: "Gill Sans";
   src: url(../assets/fonts/gill-sans-medium.otf);
   font-weight: 500;
 }
-
 @font-face {
   font-family: "Gill Sans";
   src: url(../assets/fonts/gill-sans-regular.otf);
   font-weight: 400;
 }
-
 @keyframes float-in-left {
   0% {
     left: -100px;
@@ -49,7 +42,6 @@
     left: 0px;
   }
 }
-
 @keyframes float-out-left {
   0% {
     left: 0px;
@@ -58,7 +50,6 @@
     left: -1000px;
   }
 }
-
 @keyframes rotate-up {
   0% {
     transform: rotate(90deg);
@@ -67,7 +58,6 @@
     transform: rotate(-90deg);
   }
 }
-
 @keyframes rotate-down {
   0% {
     transform: rotate(-90deg);
@@ -76,7 +66,6 @@
     transform: rotate(90deg);
   }
 }
-
 @keyframes float-in-right {
   0% {
     right: -3rem;
@@ -85,7 +74,6 @@
     right: 0;
   }
 }
-
 @keyframes float-out-right {
   0% {
     right: 0;
@@ -94,7 +82,6 @@
     right: -3rem;
   }
 }
-
 @keyframes move-right {
   0% {
     margin-right: 2rem;
@@ -103,7 +90,6 @@
     margin-right: 0;
   }
 }
-
 @keyframes move-left {
   0% {
     margin-right: 0;
@@ -112,7 +98,6 @@
     margin-right: 2rem;
   }
 }
-
 html {
   font-size: 18px;
   font-family: "Gill Sans", sans-serif;
@@ -137,7 +122,6 @@ aside {
   z-index: 200;
   box-shadow: 27px 0px 71px 10px rgba(0, 0, 0, 0.75);
 }
-
 aside .btn-close {
   position: absolute;
   left: 1rem;
@@ -149,27 +133,22 @@ aside .btn-close {
   transition: all 0.25s linear;
   cursor: pointer;
 }
-
 aside .btn-close:hover {
   color: #4D748B;
 }
-
 aside .profile {
   padding: 1rem;
 }
-
 aside .profile img {
   width: 50%;
   height: auto;
   margin: 0 25% 1rem 25%;
   border-radius: 50%;
 }
-
 aside .profile .info {
   text-align: center;
   text-transform: uppercase;
 }
-
 aside .profile .info h1 {
   font-family: "Brandon Grotesque", sans-serif;
   font-weight: 900;
@@ -177,7 +156,6 @@ aside .profile .info h1 {
   letter-spacing: 10%;
   margin-bottom: 0.5rem;
 }
-
 aside .profile .info h2 {
   font-family: "Gill Sans", sans-serif;
   font-weight: 400;
@@ -185,7 +163,6 @@ aside .profile .info h2 {
   letter-spacing: 10%;
   color: #4D748B;
 }
-
 aside .menu-wrapper {
   text-align: center;
   font-family: "Gill Sans", sans-serif;
@@ -193,31 +170,25 @@ aside .menu-wrapper {
   font-size: 0.84rem;
   letter-spacing: 10%;
 }
-
 aside .menu-wrapper ul {
   list-style-type: none;
 }
-
 aside .menu-wrapper ul li {
   margin: 1rem 0 1rem -2rem;
   text-transform: uppercase;
 }
-
 aside .menu-wrapper ul li a {
   color: #000;
   text-decoration: none;
   transition: all 0.25s linear;
 }
-
 aside .menu-wrapper ul li .active {
   color: #4D748B;
   border-bottom: 2px solid #4D748B;
 }
-
 aside .menu-wrapper ul li:hover a {
   color: #4D748B;
 }
-
 aside .footer {
   text-align: center;
   color: #4D748B;
@@ -227,12 +198,10 @@ aside .footer {
   letter-spacing: 10%;
   margin-bottom: 1rem;
 }
-
 aside .footer p a {
   color: #4D748B;
   transition: all 0.25s linear;
 }
-
 aside .footer p a:hover {
   color: #000;
 }
@@ -244,7 +213,6 @@ header {
   z-index: 100;
   height: 2.5rem;
 }
-
 header .contact-logos {
   background-color: #fff;
   display: flex;
@@ -257,40 +225,32 @@ header .contact-logos {
   width: 2rem;
   box-shadow: -8px 0px 25px -5px rgba(0, 0, 0, 0.75);
 }
-
 header .contact-logos .social-network {
   margin: 2.5rem 0.5rem;
   color: #000;
   transition: all 0.25s ease-in;
 }
-
 header .contact-logos .social-network:first-child:hover {
   color: #2088FF;
 }
-
 header .contact-logos .social-network:nth-child(2):hover {
   color: #6F85D5;
 }
-
 header .contact-logos .social-network:nth-child(3):hover {
   color: #2EA2D4;
 }
-
 header .contact-logos .social-network:nth-child(4):hover {
   color: #42E35F;
 }
-
 header .contact-logos .social-network:last-child:hover {
   color: #00AAE9;
 }
-
 header .header-wrapper {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   padding: 0.6rem 0.5rem;
 }
-
 header .header-wrapper .contact-text {
   display: flex;
   flex-direction: row;
@@ -302,15 +262,12 @@ header .header-wrapper .contact-text {
   transition: color 0.25s linear;
   margin-right: 0;
 }
-
 header .header-wrapper .contact-text .arrow {
   margin-right: 0.3rem;
 }
-
 header .header-wrapper .contact-text:hover {
   color: #4D748B;
 }
-
 header .header-wrapper .hamburger {
   width: 1.3rem;
   height: 1rem;
@@ -319,7 +276,6 @@ header .header-wrapper .hamburger {
   justify-content: space-between;
   cursor: pointer;
 }
-
 header .header-wrapper .hamburger .line {
   width: 100%;
   height: 20%;
@@ -329,7 +285,6 @@ header .header-wrapper .hamburger .line {
   z-index: 300;
   transition: all 0.3s linear;
 }
-
 header .header-wrapper .hamburger:hover .line {
   background-color: #4D748B;
 }
@@ -345,7 +300,6 @@ header .header-wrapper .hamburger:hover .line {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .main-info .mt {
   font-family: "Brandon Grotesque", sans-serif;
   font-weight: 900;
@@ -353,27 +307,22 @@ header .header-wrapper .hamburger:hover .line {
   letter-spacing: 10%;
   margin: 0 5% 0 15%;
 }
-
 .main-info .mt:first-child {
   margin-top: 5rem;
 }
-
 .main-info .mt:last-child {
   margin-bottom: 2rem;
 }
-
 .main-info .middle {
   display: flex;
   flex-direction: row;
   justify-content: start;
   margin-top: -5rem;
 }
-
 .main-info .middle .mt {
   width: 60%;
   margin-right: 0;
 }
-
 .main-info .middle .adt {
   width: 40%;
   display: flex;
@@ -385,7 +334,6 @@ header .header-wrapper .hamburger:hover .line {
   font-size: 1.3rem;
   letter-spacing: 10%;
 }
-
 .main-info .blue-text {
   color: #4D748B;
 }
@@ -393,7 +341,6 @@ header .header-wrapper .hamburger:hover .line {
 .about {
   background-color: #F4F4F4;
 }
-
 .about .gray-wrapper {
   background-image: url("../assets/img/bgs/about-bg.png");
   background-size: 150% auto;
@@ -403,7 +350,6 @@ header .header-wrapper .hamburger:hover .line {
   padding: 1rem 2.5%;
   width: 95%;
 }
-
 .about .gray-wrapper h3 {
   color: #4D748B;
   text-transform: uppercase;
@@ -413,7 +359,6 @@ header .header-wrapper .hamburger:hover .line {
   font-size: 1rem;
   letter-spacing: 10%;
 }
-
 .about .gray-wrapper h4 {
   margin-top: 1rem;
   font-family: "Gill Sans", sans-serif;
@@ -423,24 +368,20 @@ header .header-wrapper .hamburger:hover .line {
   text-transform: uppercase;
   line-height: 22px;
 }
-
 .about .gray-wrapper .section-info {
   margin-top: 1rem;
 }
-
 .about .gray-wrapper .section-info p {
   font-weight: 400;
   margin: 0.5rem 0;
   line-height: 35px;
   letter-spacing: 1%;
 }
-
 .about .gray-wrapper .section-info p:first-child {
   font-weight: 500;
   color: #4D748B;
   margin-bottom: 1rem;
 }
-
 .about .gray-wrapper .skills .skill {
   background-color: #fff;
   width: calc(100% - 2rem);
@@ -451,31 +392,24 @@ header .header-wrapper .hamburger:hover .line {
   justify-content: space-between;
   padding: 1.5rem 1rem;
 }
-
 .about .gray-wrapper .skills .skill:first-child {
   border-bottom: 0.3rem solid #FFA500;
 }
-
 .about .gray-wrapper .skills .skill:first-child .img {
   background-color: #FFA500;
 }
-
 .about .gray-wrapper .skills .skill:nth-child(2) {
   border-bottom: 0.3rem solid #41C8F4;
 }
-
 .about .gray-wrapper .skills .skill:nth-child(2) .img {
   background-color: #41C8F4;
 }
-
 .about .gray-wrapper .skills .skill:last-child {
   border-bottom: 0.3rem solid #B041F4;
 }
-
 .about .gray-wrapper .skills .skill:last-child .img {
   background-color: #B041F4;
 }
-
 .about .gray-wrapper .skills .skill .img {
   width: 2rem;
   height: 2rem;
@@ -485,11 +419,9 @@ header .header-wrapper .hamburger:hover .line {
   justify-content: center;
   align-items: center;
 }
-
 .about .gray-wrapper .skills .skill .img i {
   color: #fff;
 }
-
 .about .gray-wrapper .skills .skill p {
   font-weight: 400;
   letter-spacing: 10%;
@@ -505,7 +437,6 @@ header .header-wrapper .hamburger:hover .line {
   width: 100%;
   width: 95%;
 }
-
 .my-skills h3 {
   color: #4D748B;
   text-transform: uppercase;
@@ -515,11 +446,9 @@ header .header-wrapper .hamburger:hover .line {
   font-size: 1rem;
   letter-spacing: 10%;
 }
-
 .my-skills .what-am-i {
   margin-top: 1rem;
 }
-
 .my-skills .what-am-i h4 {
   margin-top: 1rem;
   font-family: "Gill Sans", sans-serif;
@@ -529,13 +458,11 @@ header .header-wrapper .hamburger:hover .line {
   text-transform: uppercase;
   line-height: 22px;
 }
-
 .my-skills .what-am-i ul {
   margin-top: 0.75rem;
   list-style-type: circle;
   list-style-image: url(../assets/img/checkmark-sm.png);
 }
-
 .my-skills .what-am-i ul li {
   font-family: "Gill Sans", sans-serif;
   font-weight: 400;
@@ -543,11 +470,9 @@ header .header-wrapper .hamburger:hover .line {
   letter-spacing: 10%;
   line-height: 1.8rem;
 }
-
 .my-skills .my-languages {
   margin-top: 1rem;
 }
-
 .my-skills .my-languages h4 {
   margin-top: 1rem;
   font-family: "Gill Sans", sans-serif;
@@ -557,7 +482,6 @@ header .header-wrapper .hamburger:hover .line {
   text-transform: uppercase;
   line-height: 22px;
 }
-
 .my-skills .my-languages .languages h5 {
   color: #4D748B;
   font-family: "Gill Sans", sans-serif;
@@ -567,17 +491,14 @@ header .header-wrapper .hamburger:hover .line {
   font-style: italic;
   margin-top: 1rem;
 }
-
 .my-skills .my-languages .languages .progress {
   margin-top: 0.5rem;
 }
-
 .my-skills .my-languages .languages .progress .labels {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
 .my-skills .my-languages .languages .progress .progress-scale {
   height: 0.3rem;
   width: 100%;
@@ -585,7 +506,6 @@ header .header-wrapper .hamburger:hover .line {
   border: 2px solid #4696C3;
   border-radius: 2rem;
 }
-
 .my-skills .my-languages .languages .progress .progress-scale::before {
   content: "";
   height: 0.3rem;
@@ -595,101 +515,79 @@ header .header-wrapper .hamburger:hover .line {
   z-index: 0;
   background-color: #63ACD4;
 }
-
 .my-skills .my-languages .human-languages .progress:nth-child(3) .progress-scale {
   border-color: #841515;
 }
-
 .my-skills .my-languages .human-languages .progress:nth-child(3) .progress-scale::before {
   background-color: #A13535;
   width: 76%;
 }
-
 .my-skills .my-languages .human-languages .progress:nth-child(4) .progress-scale {
   border-color: #E49E1E;
 }
-
 .my-skills .my-languages .human-languages .progress:nth-child(4) .progress-scale::before {
   background-color: #F0B039;
   width: 28%;
 }
-
 .my-skills .my-languages .human-languages .progress:nth-child(5) .progress-scale {
   border-color: #429211;
 }
-
 .my-skills .my-languages .human-languages .progress:nth-child(5) .progress-scale::before {
   background-color: #62BB2C;
   width: 28%;
 }
-
 .my-skills .my-languages .human-languages .progress:nth-child(6) .progress-scale {
   border-color: #BD1566;
 }
-
 .my-skills .my-languages .human-languages .progress:nth-child(6) .progress-scale::before {
   background-color: #E23186;
   width: 28%;
 }
-
 .my-skills .my-languages .computer-languages .progress:nth-child(2) .progress-scale {
   border-color: #BCB400;
 }
-
 .my-skills .my-languages .computer-languages .progress:nth-child(2) .progress-scale::before {
   background-color: #D9D583;
   width: 90%;
 }
-
 .my-skills .my-languages .computer-languages .progress:nth-child(3) .progress-scale {
   border-color: #96007D;
 }
-
 .my-skills .my-languages .computer-languages .progress:nth-child(3) .progress-scale::before {
   background-color: #D05ABD;
   width: 81%;
 }
-
 .my-skills .my-languages .computer-languages .progress:nth-child(4) .progress-scale {
   border-color: #466600;
 }
-
 .my-skills .my-languages .computer-languages .progress:nth-child(4) .progress-scale::before {
   background-color: #709A17;
   width: 62%;
 }
-
 .my-skills .my-languages .computer-languages .progress:nth-child(5) .progress-scale {
   border-color: #79319B;
 }
-
 .my-skills .my-languages .computer-languages .progress:nth-child(5) .progress-scale::before {
   background-color: #A167BC;
   width: 33%;
 }
-
 .my-skills .my-languages .computer-languages .progress:nth-child(6) .progress-scale {
   border-color: #2A8484;
 }
-
 .my-skills .my-languages .computer-languages .progress:nth-child(6) .progress-scale::before {
   background-color: #549A9A;
   width: 19%;
 }
-
 .my-skills .my-languages .front-end-libraries .progress:nth-child(2) .progress-scale {
   border-color: #282368;
 }
-
 .my-skills .my-languages .front-end-libraries .progress:nth-child(2) .progress-scale::before {
   background-color: #545089;
   width: 67%;
 }
-
 .my-skills .my-languages .front-end-libraries .progress:nth-child(3) .progress-scale {
   border-color: #346328;
 }
-
 .my-skills .my-languages .front-end-libraries .progress:nth-child(3) .progress-scale::before {
   background-color: #649059;
   width: 57%;
@@ -700,7 +598,6 @@ header .header-wrapper .hamburger:hover .line {
   width: 95%;
   background-color: #F4F4F4;
 }
-
 .experience .gray-wrapper {
   background-image: url("../assets/img/bgs/exp-bg.png");
   background-size: 150% auto;
@@ -708,7 +605,6 @@ header .header-wrapper .hamburger:hover .line {
   background-repeat: no-repeat;
   width: 100%;
 }
-
 .experience .gray-wrapper h3 {
   color: #4D748B;
   text-transform: uppercase;
@@ -718,7 +614,6 @@ header .header-wrapper .hamburger:hover .line {
   font-size: 1rem;
   letter-spacing: 10%;
 }
-
 .experience .gray-wrapper h4 {
   margin-top: 1rem;
   font-family: "Gill Sans", sans-serif;
@@ -728,11 +623,9 @@ header .header-wrapper .hamburger:hover .line {
   text-transform: uppercase;
   line-height: 22px;
 }
-
 .experience .gray-wrapper .experience-block {
   margin-top: 1.5rem;
 }
-
 .experience .gray-wrapper .experience-block .img-block {
   background-color: #fff;
   width: 2rem;
@@ -744,13 +637,11 @@ header .header-wrapper .hamburger:hover .line {
   align-items: center;
   margin: 0 auto 0.4rem auto;
 }
-
 .experience .gray-wrapper .experience-block .info {
   background-color: #fff;
   padding: 1rem 0.8rem;
   border-radius: 1.5rem;
 }
-
 .experience .gray-wrapper .experience-block .info h5 {
   font-family: "Gill Sans", sans-serif;
   font-weight: 700;
@@ -759,7 +650,6 @@ header .header-wrapper .hamburger:hover .line {
   color: #4D748B;
   margin-bottom: 0.5rem;
 }
-
 .experience .gray-wrapper .experience-block .info p {
   font-family: "Gill Sans", sans-serif;
   font-weight: 400;
@@ -767,11 +657,9 @@ header .header-wrapper .hamburger:hover .line {
   letter-spacing: 10%;
   color: #4D748B;
 }
-
 .experience .gray-wrapper .experience-block .info ul {
   list-style-image: url("../assets/img/checkmark-sm.png");
 }
-
 .experience .gray-wrapper .experience-block .info ul li {
   font-family: "Gill Sans", sans-serif;
   font-weight: 400;
@@ -789,7 +677,6 @@ header .header-wrapper .hamburger:hover .line {
   padding: 1rem 2.5%;
   width: 95%;
 }
-
 .education h3 {
   color: #4D748B;
   text-transform: uppercase;
@@ -799,7 +686,6 @@ header .header-wrapper .hamburger:hover .line {
   font-size: 1rem;
   letter-spacing: 10%;
 }
-
 .education h4 {
   margin-top: 1rem;
   font-family: "Gill Sans", sans-serif;
@@ -809,17 +695,14 @@ header .header-wrapper .hamburger:hover .line {
   text-transform: uppercase;
   line-height: 22px;
 }
-
 .education .study {
   margin-top: 1.5rem;
 }
-
 .education .study img {
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
 }
-
 .education .study p {
   font-family: "Gill Sans", sans-serif;
   font-weight: 400;
@@ -827,18 +710,22 @@ header .header-wrapper .hamburger:hover .line {
   letter-spacing: 10%;
   line-height: 30px;
 }
-
 .education .study p:nth-child(3) {
   margin-top: 0.8rem;
 }
-
 .education .study p b {
   font-family: "Gill Sans", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   letter-spacing: 10%;
 }
-
+.education .study p b a {
+  color: #000;
+  transition: all 0.25s linear;
+}
+.education .study p b a:hover {
+  color: #4D748B;
+}
 .education .study p .light-text {
   font-family: "Gill Sans", sans-serif;
   font-weight: 300;
@@ -846,11 +733,9 @@ header .header-wrapper .hamburger:hover .line {
   letter-spacing: 10%;
   margin-left: 0.5rem;
 }
-
 .education .study ul {
   list-style-image: url("../assets/img/blue-bullet-sm.png");
 }
-
 .education .study ul li {
   font-family: "Gill Sans", sans-serif;
   font-weight: 400;
@@ -858,13 +743,11 @@ header .header-wrapper .hamburger:hover .line {
   letter-spacing: 10%;
   line-height: 30px;
 }
-
 .education .study ul li a {
   color: #000;
   text-decoration: none;
   transition: all 0.25s linear;
 }
-
 .education .study ul li a:hover {
   color: #4D748B;
 }
@@ -874,7 +757,6 @@ header .header-wrapper .hamburger:hover .line {
   width: 95%;
   background-color: #F4F4F4;
 }
-
 .code-examples .gray-wrapper {
   background-image: url("../assets/img/bgs/code-examples-bg.png");
   background-size: 150% auto;
@@ -882,7 +764,6 @@ header .header-wrapper .hamburger:hover .line {
   background-repeat: no-repeat;
   width: 100%;
 }
-
 .code-examples .gray-wrapper h3 {
   color: #4D748B;
   text-transform: uppercase;
@@ -892,7 +773,6 @@ header .header-wrapper .hamburger:hover .line {
   font-size: 1rem;
   letter-spacing: 10%;
 }
-
 .code-examples .gray-wrapper h4 {
   margin-top: 1rem;
   font-family: "Gill Sans", sans-serif;
@@ -902,13 +782,11 @@ header .header-wrapper .hamburger:hover .line {
   text-transform: uppercase;
   line-height: 22px;
 }
-
 .code-examples .gray-wrapper .project {
   width: 100%;
   margin-top: 0.8rem;
   border-radius: 1rem;
 }
-
 .code-examples .gray-wrapper .project .overlay {
   background-color: rgba(0, 0, 0, 0.5);
   width: calc(100% - 2rem);
@@ -916,17 +794,14 @@ header .header-wrapper .hamburger:hover .line {
   border-radius: 1rem;
   padding: 1rem;
 }
-
 .code-examples .gray-wrapper .project:nth-child(3) {
   background-image: url("../assets/img/pizza-sm.png");
   background-size: cover;
 }
-
 .code-examples .gray-wrapper .project:nth-child(4) {
   background-image: url("../assets/img/pg-purify.png");
   background-size: cover;
 }
-
 .code-examples .gray-wrapper .project p {
   color: #fff;
   font-family: "Gill Sans", sans-serif;
@@ -935,7 +810,6 @@ header .header-wrapper .hamburger:hover .line {
   letter-spacing: 10%;
   margin-bottom: 1rem;
 }
-
 .code-examples .gray-wrapper .project h5 {
   color: #fff;
   font-family: "Brandon Grotesque", sans-serif;
@@ -945,13 +819,11 @@ header .header-wrapper .hamburger:hover .line {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-
 .code-examples .gray-wrapper .project .demo-code {
   display: flex;
   flex-direction: row;
   justify-content: start;
 }
-
 .code-examples .gray-wrapper .project .demo-code .demo-ws, .code-examples .gray-wrapper .project .demo-code .code-ws {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 0.5rem;
@@ -959,21 +831,17 @@ header .header-wrapper .hamburger:hover .line {
   transition: all 0.25s ease-in;
   cursor: pointer;
 }
-
 .code-examples .gray-wrapper .project .demo-code .demo-ws a, .code-examples .gray-wrapper .project .demo-code .code-ws a {
   color: #000;
   text-decoration: none;
   transition: all 0.25s ease-out;
 }
-
 .code-examples .gray-wrapper .project .demo-code .demo-ws:hover, .code-examples .gray-wrapper .project .demo-code .code-ws:hover {
   background-color: #4D748B;
 }
-
 .code-examples .gray-wrapper .project .demo-code .demo-ws:hover a, .code-examples .gray-wrapper .project .demo-code .code-ws:hover a {
   color: #fff;
 }
-
 .code-examples .gray-wrapper .project .demo-code .code-ws {
   margin-left: 0.5rem;
 }
@@ -988,7 +856,6 @@ header .header-wrapper .hamburger:hover .line {
   width: 100%;
   width: 95%;
 }
-
 .interests h3 {
   color: #4D748B;
   text-transform: uppercase;
@@ -998,7 +865,6 @@ header .header-wrapper .hamburger:hover .line {
   font-size: 1rem;
   letter-spacing: 10%;
 }
-
 .interests h4 {
   margin-top: 1rem;
   font-family: "Gill Sans", sans-serif;
@@ -1008,11 +874,9 @@ header .header-wrapper .hamburger:hover .line {
   text-transform: uppercase;
   line-height: 22px;
 }
-
 .interests .info {
   margin-top: 1rem;
 }
-
 .interests .info p {
   margin-bottom: 0.8rem;
   font-family: "Gill Sans", sans-serif;
@@ -1021,11 +885,9 @@ header .header-wrapper .hamburger:hover .line {
   letter-spacing: 10%;
   line-height: 30px;
 }
-
 .interests .info p em {
   font-style: italic;
 }
-
 .interests .info p strong {
   font-family: "Gill Sans", sans-serif;
   font-weight: 700;

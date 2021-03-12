@@ -1,4 +1,4 @@
-@media screen and (min-width: 599px) and (max-width: 1200px) {
+@media screen and (min-width: 599px) and (max-width: 750px) {
     aside {
         width: 60%;
     }
@@ -30,6 +30,172 @@
         .gray-wrapper {
             .project {
                 margin-top: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 751px) {
+    .about, .my-skills, .experience, .education, .code-examples, .interests {
+        background-size: 90% auto !important;
+
+        .gray-wrapper {
+            background-size: 90% auto !important;
+        }
+    }
+
+    .about {
+        .gray-wrapper {
+            .skills {
+                @include flex (row, space-between);
+
+                .skill {
+                    width: 25%;
+                }
+            }
+        }
+    }
+
+    .languages {
+        @include flex (row, space-between);
+        flex-wrap: wrap;
+
+        .human-languages, .computer-languages, .front-end-libraries {
+            width: 45%;
+        }
+
+        .human-languages {
+            .progress {
+                &:nth-child(2) {
+                    .progress-scale {
+                        &::before {
+                            width: 43%;
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    .progress-scale {
+                        &::before {
+                            width: 34% !important;
+                        }
+                    }
+                }
+
+                &:nth-child(4) {
+                    .progress-scale {
+                        &::before {
+                            width: 13% !important;
+                        }
+                    }
+                }
+
+                &:nth-child(5) {
+                    .progress-scale {
+                        &::before {
+                            width: 13% !important;
+                        }
+                    }
+                }
+
+                &:nth-child(6) {
+                    .progress-scale {
+                        &::before {
+                            width: 13% !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .computer-languages {
+            .progress {
+                &:nth-child(2) {
+                    .progress-scale {
+                        &::before {
+                            width: 41% !important;
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    .progress-scale {
+                        &::before {
+                            width: 37% !important;
+                        }
+                    }
+                }
+
+                &:nth-child(4) {
+                    .progress-scale {
+                        &::before {
+                            width: 28% !important;
+                        }
+                    }
+                }
+
+                &:nth-child(5) {
+                    .progress-scale {
+                        &::before {
+                            width: 15% !important;
+                        }
+                    }
+                }
+
+                &:nth-child(6) {
+                    .progress-scale {
+                        &::before {
+                            width: 8% !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .front-end-libraries {
+            .progress {
+                &:nth-child(2) {
+                    .progress-scale {
+                        &::before {
+                            width: 27% !important;
+                        }
+                    }
+                }
+
+                &:nth-child(3) {
+                    .progress-scale {
+                        &::before {
+                            width: 23% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .education {
+        .study {
+            img {
+                width: 70%;
+                margin: 3rem 15% 1.5rem 15%;
+            }
+        }
+    }
+
+    .code-examples {
+        .gray-wrapper {
+            .websites {
+                .project {
+                    &:nth-child(1) {
+                        background-image: url('../assets/img/pizza-sm.png');
+                        background-size: cover;
+                    }
+        
+                    &:nth-child(2) {
+                        background-image: url('../assets/img/pg-purify.png');
+                        background-size: cover;
+                    }
+                }
             }
         }
     }

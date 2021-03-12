@@ -1,0 +1,36 @@
+@media screen and (min-width: 599px) and (max-width: 1200px) {
+    aside {
+        width: 60%;
+    }
+
+    header {
+        .contact-logos {
+            right: -4rem;
+            width: 3rem;
+
+            .social-network {
+                font-size: 2rem;
+            }
+        }
+
+        .header-wrapper {
+            .contact-text {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .education {
+        .study {
+            margin-top: 4rem;
+        }
+    }
+
+    .code-examples {
+        .gray-wrapper {
+            .project {
+                margin-top: 3rem;
+            }
+        }
+    }
+}

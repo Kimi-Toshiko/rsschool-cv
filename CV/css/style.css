@@ -68,7 +68,7 @@
 }
 @keyframes float-in-right {
   0% {
-    right: -3rem;
+    right: -4rem;
   }
   100% {
     right: 0;
@@ -79,7 +79,7 @@
     right: 0;
   }
   100% {
-    right: -3rem;
+    right: -4rem;
   }
 }
 @keyframes move-right {
@@ -893,4 +893,29 @@ header .header-wrapper .hamburger:hover .line {
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 10%;
+}
+
+@media screen and (min-width: 599px) and (max-width: 1200px) {
+  aside {
+    width: 60%;
+  }
+
+  header .contact-logos {
+    right: -4rem;
+    width: 3rem;
+  }
+  header .contact-logos .social-network {
+    font-size: 2rem;
+  }
+  header .header-wrapper .contact-text {
+    font-size: 1.5rem;
+  }
+
+  .education .study {
+    margin-top: 4rem;
+  }
+
+  .code-examples .gray-wrapper .project {
+    margin-top: 3rem;
+  }
 }

@@ -1,0 +1,5 @@
+@media screen and (min-width: 599px) and (max-width: 1200px) {
+  aside {
+    width: 40%;
+  }
+}

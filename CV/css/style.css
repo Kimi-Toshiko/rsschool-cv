@@ -102,6 +102,7 @@ html {
   font-size: 18px;
   font-family: "Gill Sans", sans-serif;
   color: #000;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -197,6 +198,8 @@ aside .footer {
   font-size: 0.8rem;
   letter-spacing: 10%;
   margin-bottom: 1rem;
+  width: 95%;
+  margin: 0 auto 0.5rem auto;
 }
 aside .footer p a {
   color: #4D748B;
@@ -208,7 +211,6 @@ aside .footer p a:hover {
 
 header {
   width: 100%;
-  background-color: #fff;
   position: fixed;
   z-index: 100;
   height: 2.5rem;
@@ -289,7 +291,7 @@ header .header-wrapper .hamburger:hover .line {
   background-color: #4D748B;
 }
 
-.main-info {
+.main-info .wrapper {
   background-image: url("../assets/img/bgs/main-bg.png");
   background-size: 150% auto;
   background-position: center;
@@ -300,30 +302,30 @@ header .header-wrapper .hamburger:hover .line {
   flex-direction: column;
   justify-content: space-between;
 }
-.main-info .mt {
+.main-info .wrapper .mt {
   font-family: "Brandon Grotesque", sans-serif;
   font-weight: 900;
   font-size: 3.56rem;
   letter-spacing: 10%;
   margin: 0 5% 0 15%;
 }
-.main-info .mt:first-child {
+.main-info .wrapper .mt:first-child {
   margin-top: 5rem;
 }
-.main-info .mt:last-child {
+.main-info .wrapper .mt:last-child {
   margin-bottom: 2rem;
 }
-.main-info .middle {
+.main-info .wrapper .middle {
   display: flex;
   flex-direction: row;
   justify-content: start;
   margin-top: -5rem;
 }
-.main-info .middle .mt {
+.main-info .wrapper .middle .mt {
   width: 60%;
   margin-right: 0;
 }
-.main-info .middle .adt {
+.main-info .wrapper .middle .adt {
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -334,7 +336,7 @@ header .header-wrapper .hamburger:hover .line {
   font-size: 1.3rem;
   letter-spacing: 10%;
 }
-.main-info .blue-text {
+.main-info .wrapper .blue-text {
   color: #4D748B;
 }
 
@@ -391,6 +393,7 @@ header .header-wrapper .hamburger:hover .line {
   flex-direction: column;
   justify-content: space-between;
   padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
 }
 .about .gray-wrapper .skills .skill:first-child {
   border-bottom: 0.3rem solid #FFA500;
@@ -427,7 +430,7 @@ header .header-wrapper .hamburger:hover .line {
   letter-spacing: 10%;
 }
 
-.my-skills {
+.my-skills .wrapper {
   padding: 1rem 2.5%;
   width: 95%;
   background-image: url("../assets/img/bgs/skills-bg.png");
@@ -437,7 +440,7 @@ header .header-wrapper .hamburger:hover .line {
   width: 100%;
   width: 95%;
 }
-.my-skills h3 {
+.my-skills .wrapper h3 {
   color: #4D748B;
   text-transform: uppercase;
   line-height: 26px;
@@ -446,10 +449,10 @@ header .header-wrapper .hamburger:hover .line {
   font-size: 1rem;
   letter-spacing: 10%;
 }
-.my-skills .what-am-i {
+.my-skills .wrapper .what-am-i {
   margin-top: 1rem;
 }
-.my-skills .what-am-i h4 {
+.my-skills .wrapper .what-am-i h4 {
   margin-top: 1rem;
   font-family: "Gill Sans", sans-serif;
   font-weight: 700;
@@ -458,22 +461,22 @@ header .header-wrapper .hamburger:hover .line {
   text-transform: uppercase;
   line-height: 22px;
 }
-.my-skills .what-am-i ul {
+.my-skills .wrapper .what-am-i ul {
   margin-top: 0.75rem;
   list-style-type: circle;
   list-style-image: url(../assets/img/checkmark-sm.png);
 }
-.my-skills .what-am-i ul li {
+.my-skills .wrapper .what-am-i ul li {
   font-family: "Gill Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 10%;
   line-height: 1.8rem;
 }
-.my-skills .my-languages {
+.my-skills .wrapper .my-languages {
   margin-top: 1rem;
 }
-.my-skills .my-languages h4 {
+.my-skills .wrapper .my-languages h4 {
   margin-top: 1rem;
   font-family: "Gill Sans", sans-serif;
   font-weight: 700;
@@ -482,7 +485,7 @@ header .header-wrapper .hamburger:hover .line {
   text-transform: uppercase;
   line-height: 22px;
 }
-.my-skills .my-languages .languages h5 {
+.my-skills .wrapper .my-languages .languages h5 {
   color: #4D748B;
   font-family: "Gill Sans", sans-serif;
   font-weight: 400;
@@ -491,22 +494,22 @@ header .header-wrapper .hamburger:hover .line {
   font-style: italic;
   margin-top: 1rem;
 }
-.my-skills .my-languages .languages .progress {
+.my-skills .wrapper .my-languages .languages .progress {
   margin-top: 0.5rem;
 }
-.my-skills .my-languages .languages .progress .labels {
+.my-skills .wrapper .my-languages .languages .progress .labels {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.my-skills .my-languages .languages .progress .progress-scale {
+.my-skills .wrapper .my-languages .languages .progress .progress-scale {
   height: 0.3rem;
   width: 100%;
   margin-top: 0.2rem;
   border: 2px solid #4696C3;
   border-radius: 2rem;
 }
-.my-skills .my-languages .languages .progress .progress-scale::before {
+.my-skills .wrapper .my-languages .languages .progress .progress-scale::before {
   content: "";
   height: 0.3rem;
   border-radius: 2rem;
@@ -515,80 +518,80 @@ header .header-wrapper .hamburger:hover .line {
   z-index: 0;
   background-color: #63ACD4;
 }
-.my-skills .my-languages .human-languages .progress:nth-child(3) .progress-scale {
+.my-skills .wrapper .my-languages .human-languages .progress:nth-child(3) .progress-scale {
   border-color: #841515;
 }
-.my-skills .my-languages .human-languages .progress:nth-child(3) .progress-scale::before {
+.my-skills .wrapper .my-languages .human-languages .progress:nth-child(3) .progress-scale::before {
   background-color: #A13535;
   width: 76%;
 }
-.my-skills .my-languages .human-languages .progress:nth-child(4) .progress-scale {
+.my-skills .wrapper .my-languages .human-languages .progress:nth-child(4) .progress-scale {
   border-color: #E49E1E;
 }
-.my-skills .my-languages .human-languages .progress:nth-child(4) .progress-scale::before {
+.my-skills .wrapper .my-languages .human-languages .progress:nth-child(4) .progress-scale::before {
   background-color: #F0B039;
   width: 28%;
 }
-.my-skills .my-languages .human-languages .progress:nth-child(5) .progress-scale {
+.my-skills .wrapper .my-languages .human-languages .progress:nth-child(5) .progress-scale {
   border-color: #429211;
 }
-.my-skills .my-languages .human-languages .progress:nth-child(5) .progress-scale::before {
+.my-skills .wrapper .my-languages .human-languages .progress:nth-child(5) .progress-scale::before {
   background-color: #62BB2C;
   width: 28%;
 }
-.my-skills .my-languages .human-languages .progress:nth-child(6) .progress-scale {
+.my-skills .wrapper .my-languages .human-languages .progress:nth-child(6) .progress-scale {
   border-color: #BD1566;
 }
-.my-skills .my-languages .human-languages .progress:nth-child(6) .progress-scale::before {
+.my-skills .wrapper .my-languages .human-languages .progress:nth-child(6) .progress-scale::before {
   background-color: #E23186;
   width: 28%;
 }
-.my-skills .my-languages .computer-languages .progress:nth-child(2) .progress-scale {
+.my-skills .wrapper .my-languages .computer-languages .progress:nth-child(2) .progress-scale {
   border-color: #BCB400;
 }
-.my-skills .my-languages .computer-languages .progress:nth-child(2) .progress-scale::before {
+.my-skills .wrapper .my-languages .computer-languages .progress:nth-child(2) .progress-scale::before {
   background-color: #D9D583;
   width: 90%;
 }
-.my-skills .my-languages .computer-languages .progress:nth-child(3) .progress-scale {
+.my-skills .wrapper .my-languages .computer-languages .progress:nth-child(3) .progress-scale {
   border-color: #96007D;
 }
-.my-skills .my-languages .computer-languages .progress:nth-child(3) .progress-scale::before {
+.my-skills .wrapper .my-languages .computer-languages .progress:nth-child(3) .progress-scale::before {
   background-color: #D05ABD;
   width: 81%;
 }
-.my-skills .my-languages .computer-languages .progress:nth-child(4) .progress-scale {
+.my-skills .wrapper .my-languages .computer-languages .progress:nth-child(4) .progress-scale {
   border-color: #466600;
 }
-.my-skills .my-languages .computer-languages .progress:nth-child(4) .progress-scale::before {
+.my-skills .wrapper .my-languages .computer-languages .progress:nth-child(4) .progress-scale::before {
   background-color: #709A17;
   width: 62%;
 }
-.my-skills .my-languages .computer-languages .progress:nth-child(5) .progress-scale {
+.my-skills .wrapper .my-languages .computer-languages .progress:nth-child(5) .progress-scale {
   border-color: #79319B;
 }
-.my-skills .my-languages .computer-languages .progress:nth-child(5) .progress-scale::before {
+.my-skills .wrapper .my-languages .computer-languages .progress:nth-child(5) .progress-scale::before {
   background-color: #A167BC;
   width: 33%;
 }
-.my-skills .my-languages .computer-languages .progress:nth-child(6) .progress-scale {
+.my-skills .wrapper .my-languages .computer-languages .progress:nth-child(6) .progress-scale {
   border-color: #2A8484;
 }
-.my-skills .my-languages .computer-languages .progress:nth-child(6) .progress-scale::before {
+.my-skills .wrapper .my-languages .computer-languages .progress:nth-child(6) .progress-scale::before {
   background-color: #549A9A;
   width: 19%;
 }
-.my-skills .my-languages .front-end-libraries .progress:nth-child(2) .progress-scale {
+.my-skills .wrapper .my-languages .front-end-libraries .progress:nth-child(2) .progress-scale {
   border-color: #282368;
 }
-.my-skills .my-languages .front-end-libraries .progress:nth-child(2) .progress-scale::before {
+.my-skills .wrapper .my-languages .front-end-libraries .progress:nth-child(2) .progress-scale::before {
   background-color: #545089;
   width: 67%;
 }
-.my-skills .my-languages .front-end-libraries .progress:nth-child(3) .progress-scale {
+.my-skills .wrapper .my-languages .front-end-libraries .progress:nth-child(3) .progress-scale {
   border-color: #346328;
 }
-.my-skills .my-languages .front-end-libraries .progress:nth-child(3) .progress-scale::before {
+.my-skills .wrapper .my-languages .front-end-libraries .progress:nth-child(3) .progress-scale::before {
   background-color: #649059;
   width: 57%;
 }
@@ -668,7 +671,7 @@ header .header-wrapper .hamburger:hover .line {
   line-height: 30px;
 }
 
-.education {
+.education .wrapper {
   background-image: url("../assets/img/bgs/study-bg.png");
   background-size: 150% auto;
   background-position: center;
@@ -677,7 +680,7 @@ header .header-wrapper .hamburger:hover .line {
   padding: 1rem 2.5%;
   width: 95%;
 }
-.education h3 {
+.education .wrapper h3 {
   color: #4D748B;
   text-transform: uppercase;
   line-height: 26px;
@@ -686,7 +689,7 @@ header .header-wrapper .hamburger:hover .line {
   font-size: 1rem;
   letter-spacing: 10%;
 }
-.education h4 {
+.education .wrapper h4 {
   margin-top: 1rem;
   font-family: "Gill Sans", sans-serif;
   font-weight: 700;
@@ -695,60 +698,60 @@ header .header-wrapper .hamburger:hover .line {
   text-transform: uppercase;
   line-height: 22px;
 }
-.education .study {
+.education .wrapper .study {
   margin-top: 1.5rem;
 }
-.education .study img {
+.education .wrapper .study img {
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
 }
-.education .study p {
+.education .wrapper .study p {
   font-family: "Gill Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 10%;
   line-height: 30px;
 }
-.education .study p:nth-child(3) {
+.education .wrapper .study p:nth-child(3) {
   margin-top: 0.8rem;
 }
-.education .study p b {
+.education .wrapper .study p b {
   font-family: "Gill Sans", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   letter-spacing: 10%;
 }
-.education .study p b a {
+.education .wrapper .study p b a {
   color: #000;
   transition: all 0.25s linear;
 }
-.education .study p b a:hover {
+.education .wrapper .study p b a:hover {
   color: #4D748B;
 }
-.education .study p .light-text {
+.education .wrapper .study p .light-text {
   font-family: "Gill Sans", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   letter-spacing: 10%;
   margin-left: 0.5rem;
 }
-.education .study ul {
+.education .wrapper .study ul {
   list-style-image: url("../assets/img/blue-bullet-sm.png");
 }
-.education .study ul li {
+.education .wrapper .study ul li {
   font-family: "Gill Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 10%;
   line-height: 30px;
 }
-.education .study ul li a {
+.education .wrapper .study ul li a {
   color: #000;
   text-decoration: none;
   transition: all 0.25s linear;
 }
-.education .study ul li a:hover {
+.education .wrapper .study ul li a:hover {
   color: #4D748B;
 }
 
@@ -846,7 +849,7 @@ header .header-wrapper .hamburger:hover .line {
   margin-left: 0.5rem;
 }
 
-.interests {
+.interests .wrapper {
   padding: 1rem 2.5%;
   width: 95%;
   background-image: url("../assets/img/bgs/interests-bg.png");
@@ -856,7 +859,7 @@ header .header-wrapper .hamburger:hover .line {
   width: 100%;
   width: 95%;
 }
-.interests h3 {
+.interests .wrapper h3 {
   color: #4D748B;
   text-transform: uppercase;
   line-height: 26px;
@@ -865,7 +868,7 @@ header .header-wrapper .hamburger:hover .line {
   font-size: 1rem;
   letter-spacing: 10%;
 }
-.interests h4 {
+.interests .wrapper h4 {
   margin-top: 1rem;
   font-family: "Gill Sans", sans-serif;
   font-weight: 700;
@@ -874,10 +877,10 @@ header .header-wrapper .hamburger:hover .line {
   text-transform: uppercase;
   line-height: 22px;
 }
-.interests .info {
+.interests .wrapper .info {
   margin-top: 1rem;
 }
-.interests .info p {
+.interests .wrapper .info p {
   margin-bottom: 0.8rem;
   font-family: "Gill Sans", sans-serif;
   font-weight: 400;
@@ -885,21 +888,24 @@ header .header-wrapper .hamburger:hover .line {
   letter-spacing: 10%;
   line-height: 30px;
 }
-.interests .info p em {
+.interests .wrapper .info p em {
   font-style: italic;
 }
-.interests .info p strong {
+.interests .wrapper .info p strong {
   font-family: "Gill Sans", sans-serif;
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: 10%;
 }
 
-@media screen and (min-width: 599px) and (max-width: 1200px) {
+@media screen and (min-width: 599px) and (max-width: 750px) {
   aside {
     width: 60%;
   }
 
+  header {
+    background-color: #fff;
+  }
   header .contact-logos {
     right: -4rem;
     width: 3rem;
@@ -917,5 +923,140 @@ header .header-wrapper .hamburger:hover .line {
 
   .code-examples .gray-wrapper .project {
     margin-top: 3rem;
+  }
+}
+@media screen and (min-width: 751px) and (max-width: 1198px) {
+  header {
+    background-color: #fff;
+  }
+
+  .about, .my-skills, .experience, .education, .code-examples, .interests {
+    background-size: 90% auto !important;
+  }
+  .about .gray-wrapper, .my-skills .gray-wrapper, .experience .gray-wrapper, .education .gray-wrapper, .code-examples .gray-wrapper, .interests .gray-wrapper {
+    background-size: 90% auto !important;
+  }
+
+  .about .gray-wrapper .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .about .gray-wrapper .skills .skill {
+    width: 25%;
+  }
+
+  .languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .languages .human-languages, .languages .computer-languages, .languages .front-end-libraries {
+    width: 45%;
+  }
+  .languages .human-languages .progress:nth-child(2) .progress-scale::before {
+    width: 43%;
+  }
+  .languages .human-languages .progress:nth-child(3) .progress-scale::before {
+    width: 34% !important;
+  }
+  .languages .human-languages .progress:nth-child(4) .progress-scale::before {
+    width: 13% !important;
+  }
+  .languages .human-languages .progress:nth-child(5) .progress-scale::before {
+    width: 13% !important;
+  }
+  .languages .human-languages .progress:nth-child(6) .progress-scale::before {
+    width: 13% !important;
+  }
+  .languages .computer-languages .progress:nth-child(2) .progress-scale::before {
+    width: 41% !important;
+  }
+  .languages .computer-languages .progress:nth-child(3) .progress-scale::before {
+    width: 37% !important;
+  }
+  .languages .computer-languages .progress:nth-child(4) .progress-scale::before {
+    width: 28% !important;
+  }
+  .languages .computer-languages .progress:nth-child(5) .progress-scale::before {
+    width: 15% !important;
+  }
+  .languages .computer-languages .progress:nth-child(6) .progress-scale::before {
+    width: 8% !important;
+  }
+  .languages .front-end-libraries .progress:nth-child(2) .progress-scale::before {
+    width: 27% !important;
+  }
+  .languages .front-end-libraries .progress:nth-child(3) .progress-scale::before {
+    width: 23% !important;
+  }
+
+  .education .study img {
+    width: 70%;
+    margin: 3rem 15% 1.5rem 15%;
+  }
+
+  .code-examples .gray-wrapper .websites .project:nth-child(1) {
+    background-image: url("../assets/img/pizza-sm.png");
+    background-size: cover;
+  }
+  .code-examples .gray-wrapper .websites .project:nth-child(2) {
+    background-image: url("../assets/img/pg-purify.png");
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1199px) {
+  body {
+    background-image: url("../assets/img/bgs/pc-bg.jpg");
+    background-size: cover;
+  }
+
+  aside {
+    width: 22vw;
+    height: 80vh;
+    box-shadow: none;
+    position: absolute;
+    top: 10vh;
+    bottom: 10vh;
+    left: 9vw;
+  }
+  aside .btn-close {
+    display: none;
+  }
+  aside .footer {
+    margin-bottom: 1rem;
+  }
+
+  header {
+    background-color: none;
+  }
+  header .header-wrapper {
+    justify-content: center;
+  }
+  header .header-wrapper .contact-text {
+    width: 7rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  header .header-wrapper .contact-text:hover {
+    color: #fff;
+  }
+  header .header-wrapper .hamburger {
+    display: none;
+  }
+
+  main {
+    position: absolute;
+    width: 60vw;
+    height: 80vh;
+    overflow: scroll;
+    left: 31vw;
+    top: 10vh;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+  }
+  main section .wrapper {
+    background-color: #fff;
   }
 }

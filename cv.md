@@ -54,7 +54,10 @@ Open-minded person, who is ready to try myself in absolutely new sphere. Non-con
 
 
 ## Education:
-In progress Bachelor Degree: **Business Information Systems** — 2018-2022 <br />
+Secondary Education: **Exact Sciences** — 2016-2019 <br />
+**Academic Lyceum under Westminster International University in Tashkent**, Tashkent
+
+Bachelor Degree: **Business Information Systems** — 2018-2022 <br />
 **Westminster International University in Tashkent**, Tashkent
 
 

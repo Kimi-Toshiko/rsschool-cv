@@ -24,6 +24,7 @@ html {
 * {
     color: var(--txt-gray);
     transition: .2s;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -98,8 +99,10 @@ ul li {
 }
 
 .wrapper {
-    width: 90%;
+    width: 90vw;
     margin: .5rem auto;
+    max-width: 1300px;
+    min-width: 300px;
 }
 
 main > .wrapper > section {
@@ -140,6 +143,7 @@ header .wrapper {
 header .wrapper .info {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .personal-info h1 {
@@ -150,7 +154,7 @@ header .wrapper .info {
 .contact-info {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .langs {

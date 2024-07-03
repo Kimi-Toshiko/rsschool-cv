@@ -44,16 +44,24 @@ Open-minded person, who is ready to try myself in absolutely new sphere. Non-con
 * Fully immersed in the task given;
 
 ## Experience:
-> **Accounting Assistant** - 06/2019 up until now <br />
-> **Medical Centre**, Tashkent
-
-> **English Language Tutor** - 08/2019 - 08/2020 <br />
-> **Individual trainings at home**, Tashkent
-
 > **Front-End Web Developer (Freelance)** - 06/2020 - 06/2020 <br />
 > **ABAL Solutions**, India
 
-I have been working as a freelancer, remaking the exterior of the website in a few days. The client had had all main information and a simply designed website, which I had to make more attractive for users. First of all, I had offered a model of the future website and after acceptance of the customer, I have started to work with the front-end part of the website using Sass-preprocessor, Bootstrap and jQuery. Final result can be seen here: ABAL Solutions
+I have been working as a freelancer, remaking the exterior of the website in a few days. The client had had all main information and a simply designed website, which I had to make more attractive for users. First of all, I had offered a model of the future website and after acceptance of the customer, I have started to work with the front-end part of the website using Sass-preprocessor, Bootstrap and jQuery. Final result can be seen here: [ABAL Solutions](https://www.abalsolutions.com/home)
+
+> **Website manager** - 11/2023 up until now <br />
+> **The Center of Creation and Development of Learning Resources in Medicine of Tashkent City**, Tashkent
+
+My duties are: updating the information (such as news, letters, books and etc.) on the website; insert the information onto the learning platform through administrator panel; watch website attandance; track the website for errors; administrating users, including change about their personal information, password reseting, help with registration and etc.
+
+> **Chief Acccountant's assistant** - 08/2019 - 01/2023 <br />
+> **The Center of Creation and Development of Learning Resources in Medicine of Tashkent City**, Tashkent
+
+> **English Language Tutor** - 08/2019 - 08/2020 <br />
+> **Individual trainings at home**, Tashkent
+>
+> > **Marketplace Manager** - 05/2022 up until now <br />
+> **OK TRENDY KIDS APPAREL**, Tashkent
 
 
 ## Education:

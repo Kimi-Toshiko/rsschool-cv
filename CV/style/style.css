@@ -25,6 +25,7 @@ html {
     color: var(--txt-gray);
     transition: .2s;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -118,6 +119,34 @@ main > .wrapper > section {
 header {
     background-color: var(--bg-dark);
     padding: 1rem 0;
+}
+
+header .one-line-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .one-line-container nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+header .one-line-container nav ul li a {
+    text-decoration: none;
+    color: var(--code-red);
+    text-transform: uppercase;
+}
+
+header .one-line-container nav ul li a:hover {
+    color: var(--code-orange);
+}
+
+header .one-line-container nav ul li:nth-child(2) {
+    margin: 0 1.5rem;
 }
 
 .profile-pic {

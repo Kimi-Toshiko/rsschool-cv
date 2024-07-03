@@ -458,3 +458,55 @@ footer .creation-year {
     line-height: 1.5rem;
 }
 /* CODE EXAMPLE RULES END */
+
+/* PET PROJECTS RULES */
+.pet-projects h4 {
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+.pet-projects h4::before {
+    content: "";
+    margin-left: -.5rem;
+}
+
+.pet-projects .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pet-projects .project {
+    width: 48%;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.pet-projects .project img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.access-block {
+    background-color: var(--bg-dark);
+    padding: 1rem 0;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    font-size: 2rem;
+}
+
+.access-block a:first-child {
+    margin-right: 1rem;
+}
+
+.access-block a:hover i {
+    color: var(--code-green);
+}
+
+.access-block a:visited i {
+    color: var(--code-orange);
+}
+/* PET PROJECTS RULES END */

@@ -105,6 +105,10 @@ ul li {
     min-width: 300px;
 }
 
+main {
+    padding: 1rem 0;
+}
+
 main > .wrapper > section {
     margin: 0 1.5rem;
 }
@@ -335,3 +339,54 @@ header .wrapper .info {
     color: var(--code-red);
 }
 /* WORKING EXPERIENCE RULES END */
+
+/* FOOTER RULES */
+footer {
+    background-color: var(--bg-dark);
+    padding: 1rem 0;
+}
+
+footer .wrapper .info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+footer .github-link a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+footer .github-link a i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer .github-link a:hover {
+    color: var(--code-green);
+}
+
+footer .github-link a:hover i {
+    color: var(--code-green);
+}
+
+footer .rs-school-logo {
+    width: 20%;
+}
+
+footer .rs-school-logo img {
+    width: 100%;
+    height: auto;
+}
+
+footer .creation-year {
+    font-size: 1.5rem;
+}
+/* FOOTER RULES END */

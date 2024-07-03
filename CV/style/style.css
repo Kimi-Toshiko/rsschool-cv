@@ -165,8 +165,10 @@ header .one-line-container nav ul li a:hover {
     color: var(--code-orange);
 }
 
-header .one-line-container nav ul li:nth-child(2) {
-    margin: 0 1.5rem;
+header .one-line-container nav ul li:first-child, 
+header .one-line-container nav ul li:nth-child(2), 
+header .one-line-container nav ul li:nth-child(3) {
+    margin-right: 1.5rem;
 }
 
 .profile-pic {

@@ -10,6 +10,10 @@
     --code-red: #c97377;
     --code-orange: #c39c6e;
     --code-green: #a3c182;
+    --code-purple: #b87dd7;
+    --code-blue: #7faee9;
+    --code-yellow: #bec185;
+    --code-cyan: #7ab4c0;
 }
 
 /* COMMON RULES */
@@ -85,6 +89,22 @@ p {
 
 .code-green {
     color: var(--code-green);
+}
+
+.code-purple {
+    color: var(--code-purple);
+}
+
+.code-blue {
+    color: var(--code-blue);
+}
+
+.code-yellow {
+    color: var(--code-yellow);
+}
+
+.code-cyan {
+    color: var(--code-cyan);
 }
 
 ul {
@@ -423,3 +443,16 @@ footer .creation-year {
     font-size: 1.5rem;
 }
 /* FOOTER RULES END */
+
+/* CODE EXAMPLE RULES */
+.code-example {
+    margin: 1rem;
+}
+
+.code-example pre {
+    background-color: var(--bg-dark);
+    padding: 0 2rem;
+    border-radius: .5rem;
+    line-height: 1.5rem;
+}
+/* CODE EXAMPLE RULES END */

@@ -1,0 +1,392 @@
+@font-face {
+    font-family: Cascadia;
+    src: url('../assets/Cascadia.ttf');
+}
+
+:root {
+    --bg-light: #24272d;
+    --bg-dark: #1f2227;
+    --txt-gray: #adb2be;
+    --code-red: #c97377;
+    --code-orange: #c39c6e;
+    --code-green: #a3c182;
+}
+
+/* COMMON RULES */
+html {
+    font-family: serif;
+    font-family: Cascadia;
+    font-size: 16px;
+    background-color: var(--bg-light);
+    color: var(--txt-gray);
+}
+
+* {
+    color: var(--txt-gray);
+    transition: .2s;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h2 {
+    color: var(--code-green);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+h4 {
+    line-height: 1.5rem;
+    margin-left: .5rem;
+}
+
+h4::before {
+    content: "*";
+    position: relative;
+    right: .5rem;
+    color: var(--code-red);
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+.code-block {
+    font-size: 1.2rem;
+}
+
+.code-big {
+    font-size: 1.5rem;
+}
+
+.code-gray {
+    color: var(--txt-gray);
+}
+
+.code-red {
+    color: var(--code-red);
+}
+
+.code-orange {
+    color: var(--code-orange);
+}
+
+.code-green {
+    color: var(--code-green);
+}
+
+ul {
+    padding-left: .5rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.code-tag {
+    margin-left: 1rem;
+}
+
+.wrapper {
+    width: 90vw;
+    margin: .5rem auto;
+    max-width: 1300px;
+    min-width: 300px;
+}
+
+main {
+    padding: 1rem 0;
+}
+
+main > .wrapper > section {
+    margin: 0 1.5rem;
+}
+/* COMMON RULES END */
+
+/* HEADER RULES */
+header {
+    background-color: var(--bg-dark);
+    padding: 1rem 0;
+}
+
+.profile-pic {
+    width: 10rem;
+    height: auto;
+    border: 2px solid var(--txt-gray);
+    border-radius: 10rem;
+}
+
+.code-tag {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+header .wrapper {
+    background-color: var(--bg-dark);
+}
+
+header .wrapper .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.personal-info h1 {
+    margin-top: 1rem;
+    line-height: 2.5rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.langs {
+    margin: 0 2rem;
+}
+
+.contacts > div {
+    margin-bottom: 1rem;
+}
+
+.phone, .mail, .github-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: nowrap;
+}
+
+.phone i, .mail i, .github-link i {
+    margin-right: 1rem;
+}
+
+.nums {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+
+.nums a, .nums-countries p {
+    text-decoration: none;
+    margin-bottom: .5rem;
+}
+
+.nums a:hover, .github-link a:hover {
+    color: var(--code-green);
+}
+
+.nums a:visited, .nums a:active, .github-link a:visited, .github-link a:active {
+    color: var(--code-orange);
+}
+
+.langs ul li {
+    margin-bottom: .5rem;
+    margin-left: 0;
+}
+
+.langs ul li::before {
+    content: "<>";
+    position: relative;
+    right: .5rem;
+    color: var(--code-red);
+}
+
+.skills > ul > li {
+    margin-bottom: .5rem;
+}
+
+.skills > ul > li::before {
+    content: "()";
+    position: relative;
+    right: .5rem;
+    color: var(--code-red);
+}
+
+.skills li > ul > li {
+    margin-top: .25rem;
+}
+
+.skills li > ul > li::before {
+    content: "{";
+    position: relative;
+    right: .5rem;
+    color: var(--code-orange);
+}
+
+.skills li > ul > li::after {
+    content: "}";
+    position: relative;
+    left: .5rem;
+    color: var(--code-orange);
+}
+/* HEADER RULES END */
+
+/* ABOUT ME SECTION RULES */
+.about-me .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-top: 1rem;
+}
+
+.about-me .info p {
+    width: 50%;
+    margin-right: 2.5rem;
+}
+
+.about-me .info > ul > li {
+    margin-bottom: .5rem;
+}
+
+.about-me .info > ul > li::before {
+    content: "*";
+    color: var(--code-red);
+    position: relative;
+    right: .5rem;
+}
+/* ABOUT ME SECTION RULES END */
+
+/* EDUCATION SECTION RULES */
+.education .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.education > .info > div:nth-child(2) {
+    margin: auto 2rem;
+}
+
+.education .description {
+    margin-top: .5rem;
+}
+
+.education ul > li {
+    margin-bottom: .5rem;
+}
+
+.education ul > li::before {
+    content: "*";
+    color: var(--code-red);
+    position: relative;
+    right: .5rem;
+}
+
+.education .university, .education .lyceum {
+    width: 55%;
+}
+/* EDUCATION SECTION RULES END */
+
+/* WORKING EXPERIENCE RULES */
+.working-experience .job {
+    margin-bottom: 1.5rem;
+}
+
+.working-experience .description {
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+
+.working-experience .description::before {
+    content: "{";
+    color: var(--code-orange);
+    position: relative;
+    right: .5rem;
+}
+
+.working-experience .description::after {
+    content: "}";
+    color: var(--code-orange);
+    position: relative;
+    left: .5rem;
+}
+
+.working-experience .job a {
+    display: inline-block;
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+
+.working-experience .job a:hover {
+    color: var(--code-orange);
+}
+
+.working-experience .job a:visited, .working-experience .job a:active {
+    color: var(--code-red);
+}
+/* WORKING EXPERIENCE RULES END */
+
+/* FOOTER RULES */
+footer {
+    background-color: var(--bg-dark);
+    padding: 1rem 0;
+}
+
+footer .wrapper .info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+footer .github-link a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+footer .github-link a i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer .github-link a:hover {
+    color: var(--code-green);
+}
+
+footer .github-link a:hover i {
+    color: var(--code-green);
+}
+
+footer .rs-school-logo {
+    width: 20%;
+}
+
+footer .rs-school-logo img {
+    width: 100%;
+    height: auto;
+}
+
+footer .creation-year {
+    font-size: 1.5rem;
+}
+/* FOOTER RULES END */

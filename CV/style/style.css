@@ -190,6 +190,10 @@ header .wrapper .info {
     justify-content: space-between;
 }
 
+.contact-info ul li:nth-child(2) {
+    margin: 1rem 0;
+}
+
 .langs {
     margin: 0 2rem;
 }
